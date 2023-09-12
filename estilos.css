@@ -29,6 +29,11 @@
     --font-p: 8px;
     --font-a: 10px;
 
+    --font-h2-banner: 3vw;
+    --font-h3-banner: 4vw;
+    --font-h4-banner:2vw;
+    --font-p-banner: 2vw;
+    --font-a-banner: 2vw;
     
 }
 
@@ -158,10 +163,13 @@ body{
 .navbar-toggler{
     border: none;
     padding: 0 10px; 
+    
+}
+.navbar-toggler-icon{
+    height: 25px;
 }
 
-
-.row{
+.row {
     background-color: var(--color-principal);
     width: auto;
 
@@ -171,24 +179,19 @@ body{
     padding: 0 10px;
     justify-content: start;
     align-items: start;
-
+    
 
 }
 
 .logo img{
     width: auto;
-    height: 30px;
+    height: 2rem;
     object-fit: cover;
     text-align: left;
 }
 
 
 
-
-
-.navbar-toggler-icon{
-    height: 25px;
-}
 
 .container-list-menu {
     margin: 2px;
@@ -243,86 +246,94 @@ body{
 
 /*Inicio Carousel*/
 .carousel{ /*contenedor slide carousel*/
-    width: 100%;
-    height: auto;
     position: relative;
-
-}
-.carousel-indicators{
-    top:auto;
 }
 
 /*inicio controles*/
+.carousel-indicators{
+    position: absolute;
+    top: 80%;
+}
+
 .carousel-control-prev{ /*control prev*/
-        left: -10px;
-        z-index: 10;
+        left: -1%;
+        z-index: 100;
+        position: absolute;
 }
 
 .carousel-control-next {/*control next*/
-    right: -10px;
-    z-index: 10;
+    right: -1%;
+    z-index: 100;
+    position: absolute;
 }
 /*fin controles*/
 
 
 /*inicio inner*/
-.carousel-inner img{ /*imagen*/
+
+.carousel-inner img {
+    /*imagen*/
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    height: 110%;
+    object-fit: scale-down;
     object-position: center;
-    background-color: var(--color-shadow-white);
 }
 
-
-.carousel-txt{ /*contenedor texto*/
-    width: 120px;
-    padding: 5px;
-    background-color: var(--color-shadow-white);
-    border-radius: 10px;
+/*texto de carousel*/
+.carousel-content{ 
     position: absolute;
-    top:20px;
-    left: 30px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: 0px auto;
-    flex-wrap: wrap
+    align-items: center;
+    background-color: var(--color-shadow-white);
+    border-radius: 5%;
+    text-align:center;
+    width:45%;
+    height: 75%;
+    left: 10%;
+    top: 10%;
+    padding: 2%;
 }
 
+.carousel-txt{
+    color: var(--color-font-header);
+    margin:0%;
+}
+
+.carousel-button{
+    margin:0%;
+}
+
+.btn{
+   border: none;
+}
 .carousel-txt h2{
-    font-size: var(--font-h2) /*8px*/;
+    font-size: var(--font-h2-banner) /*8px*/;
     font-weight: bold;
-    align-items: center;
-    text-align: center;
-    margin: 1px;
+    margin:0%;
+
 }
 
 .carousel-txt h3{
     color: var(--color-font-header);
-    font-size: var(--font-h3) /*10px*/;
+    font-size: var(--font-h3-banner) /*10px*/;
     font-weight:bolder;
     background-color: var(--color-principal);
-    padding: 10px 15px;
-    text-align: center;
-    margin: 1px;
+    margin:0%;
+
 }
 .carousel-txt p{
-    font-size: var(--font-p) /* 6px*/;
-    align-items: center;
-    text-align: center;
-    margin: 1px;
+    font-size: var(--font-p-banner) /* 6px*/;
+    line-height: normal;
+    margin:0%;
+
 }
 
-.carousel-txt a{
+.carousel-button a{
     color: var(--color-font-header);
-    font-size: var(--font-a) /*10px*/;
-    font-weight:bold;
+    font-size: var(--font-h2-banner) /*10px*/;
+    font-weight:bolder;
     background-color: var(--color-principal);
-    padding: 5px 15px;
-    text-align: center;
-    margin: 1px;
-    border-radius: 10px;
+    line-height: normal;    margin:0%;
+
 }
 
 /*fin Carousel*/
@@ -335,21 +346,21 @@ body{
 
 
 
+/*-------------------------------------------------------*/
+
 /*Inicio ofertas destacadas*/
 .selector-filtro { /*contenedor filtro*/
     display: block;
+    margin: auto;
     align-items: center;
     text-align: center;
-    height: 50px;
     width: 100%;
     padding: 10px;
-
-
 }
+
 
 .txt-ofertas{
     width: 100%;
-    height: 10px;
     padding: 0;
     margin: 0;
 }
@@ -365,7 +376,7 @@ body{
 
 .selector-filtro h2 {
     width: auto;
-    font-size: var(--font-h2); /*12px*/
+    font-size: var(--font-h2-banner); /*12px*/
     font-weight: bold;
     color: var(--color-font);
     font-family: 'mulish';
@@ -374,14 +385,14 @@ body{
 .lista-opciones a {
     color: var(--color-font);
     font-family: 'mulish';
-    font-size: var(--font-h2); /*10 px*/
+    font-size: var(--font-h2-banner); /*10 px*/
     margin: 0px 10px;
 }
 
 .lista-opciones a:hover {
     color: var(--color-principal);
     font-family: 'mulish';
-    font-size: var(--font-h2); /*12px*/
+    font-size: var(--font-h2-banner); /*12px*/
     font-weight: bold;
 }
 
@@ -393,14 +404,15 @@ body{
 
 /*--------------grids cards---------------*/
 
+
 .grid-ofertas{ /*contenedor cards*/
     display: grid;
-    grid-template-columns: repeat(auto-fill,200px);
-    grid-template-rows: repeat(auto-fill,250px);
-    justify-items: center;
+    text-align: center;
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-template-rows: repeat(auto-fill, 1fr);
+    position: relative;
     justify-content: center;
-    margin: 0;
-    padding: 10px;
+    margin: auto;
 }
 
 
@@ -412,9 +424,9 @@ body{
 
 /*Inicio Cards*/
 .item-card{/*card*/
-    width: 200px;
-    height: 250px;
-    padding: 0 10px;
+    width: 300px;
+    height: 350px;
+    margin: auto;
 }
 
 
