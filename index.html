@@ -18,45 +18,35 @@
 
 </head>
 <body>
-<!--inicio Header-->
 <main>
 
-<header>
-
-    <nav class="row navbar navbar-expand-sm navbar-dark">
-        <div class="header-logo col-5">
-                    <a href="index.html" class="logo" ><img src="Img/Luby.png" alt="logo luby drinks"></a>
-        </div>
-        <div class="header-menu col-">
-                <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <!--<span class="navbar-toggler-icon"></span>-->
-                <label class="container">
-                    <input type="checkbox">
-                    <div class="checkmark">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    </div>
-                </label>
+    <!--inicio Header-->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="index.html" class="logo"><img src="img/Luby.png" alt="logo luby drinks"></a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse " id="collapsibleNavbar">
-                <ul class="container-list-menu">
-                    <li class="nav-item"><a href="Pages/Nosotros.html">Nosotros</a></li>
-                    <li class="nav-item"><a href="Pages/contacto.html">Contacto</a></li>
-                    <li class="nav-item"><a href="Pages/Servicios.html">Servicios</a></li>
-                    <li class="nav-item"><a href="Pages/Vinos.html">Vinos</a></li>
-                    <li class="nav-item"><a href="Pages/Cervezas.html">Cervezas</a></li>
-                    <li class="nav-item"><a href="#top">Iniciar sesión</a></li>
-                    <li class="nav-item"><a href="#top">Carrito</a></li>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item px-2"><a href="Pages/Nosotros.html">Nosotros</a></li>
+                    <li class="nav-item px-2"><a href="Pages/Servicios.html">Servicios</a></li>
+                    <li class="nav-item px-2"><a href="Pages/Vinos.html">Vinos</a></li>
+                    <li class="nav-item px-2"><a href="Pages/contacto.html">Contacto</a></li>
+                    <li class="nav-item px-2"><a href="Pages/Cervezas.html">Cervezas</a></li>
+                    <li class="nav-item px-2"><a href="#top">Iniciar sesión</a></li>
+                    <li class="nav-item px-2"><a href="#top">Carrito</a></li>
                 </ul>
-            </div> 
-        </div>
-         
-    </nav>
-</header>
-
-
+                <form class="form-inline">
+                    <input class="form-control form-control-sm" type="search" placeholder="Buscar">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </nav>
+    </header>
     <!--Fin Header-->
 
 <!---------------------------------------------------------------->
@@ -101,33 +91,20 @@
         
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="Img/banner1.jpg" alt="Promocion 1">
+                <img src="img/banner1.jpg" alt="Promocion 1">
                 <div class="carousel-content">
                     <div class="carousel-txt">
                         <h2>Nueva coleccion “Killka” </h2>
                         <h3>30% OFF</h3>
                         <p>¡Consigue esta colección a precio de lanzamiento!</p>
-                    </div>
-                    <div class="carousel-button">
-                        <a class="btn" href="#" role="button">Ver colección</a>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="Img/banner2.jpg" alt="Promocion 2">
-                <div class="carousel-content">
-                    <div class="carousel-txt">
-                        <h2>Nueva coleccion “Killka” </h2>
-                        <h3>30% OFF</h3>
-                        <p>¡Consigue esta colección a precio de lanzamiento!</p>
-                    </div>
-                    <div class="carousel-button">
-                        <a class="btn btn-primary" href="#" role="button">Ver colección</a>
+                        <div class="carousel-button">
+                            <a class="btn" href="#" role="button">Ver colección</a>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="Img/banner3.jpg" alt="Promocion 3">
+                <img src="img/banner2.jpg" alt="Promocion 2">
                 <div class="carousel-content">
                     <div class="carousel-txt">
                         <h2>Nueva coleccion “Killka” </h2>
@@ -140,7 +117,20 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="Img/banner4.jpg" alt="Promocion 4">
+                <img src="img/banner3.jpg" alt="Promocion 3">
+                <div class="carousel-content">
+                    <div class="carousel-txt">
+                        <h2>Nueva coleccion “Killka” </h2>
+                        <h3>30% OFF</h3>
+                        <p>¡Consigue esta colección a precio de lanzamiento!</p>
+                    </div>
+                    <div class="carousel-button">
+                        <a class="btn btn-primary" href="#" role="button">Ver colección</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/banner4.jpg" alt="Promocion 4">
                 <div class="carousel-content">
                     <div class="carousel-txt">
                         <h2>Nueva coleccion “Killka” </h2>
@@ -187,86 +177,127 @@
     <div class="grid-ofertas row-1">
         <!--card oferta vinos-->
         <!-----------------CARD 1--------------------------------->
-    
-    
         <div class="item-card col- item-1">
             <a href="/Pages/Vinos.html">
     
                 <div class="fondo-card">
-                    <img src="Img/Card-Fondo 1.png" alt="fondo paisaje viñedo">
+                    <img src="img/Card-Fondo 1.png" alt="fondo paisaje viñedo">
                 </div>
     
                 <div class="contenido-card">
-    
                     <div class="contenido-txt-card">
                         <h2>Cullen<h2>
-                                <p>Sauvignon Blanc - Semillon</p>
-                                <div class="Contenido-txt-descripcion">
-                                    <p>Austrália </p>
-                                    <h2>$3500</h2>
-                                </div>
+                        <p>Sauvignon Blanc - Semillon</p>
+                        <p>Austrália</p>
+                        <h2>$3500</h2>
                     </div>
     
                     <div class="contenido-img-card">
-                        <img src="Img/Botella-Vino-Blanco.png" alt="botella vino blanco">
+                        <img src="img/Botella-Vino-Blanco.png" alt="botella vino blanco">
                     </div>
     
                 </div>
             </a>
         </div>
         <!----------------------CARD 2----------------------------->
-    
-    
         <div class="item-card col- item-2">
             <a href="/Pages/Vinos.html">
     
                 <div class="fondo-card">
-                    <img src="Img/Card-Fondo 1.png" alt="fondo paisaje viñedo">
+                    <img src="img/Card-Fondo 1.png" alt="fondo paisaje viñedo">
                 </div>
-    
                 <div class="contenido-card">
-    
                     <div class="contenido-txt-card">
                         <h2>Cá Bianca </h2>
                         <p>Moscato - Blanco</p>
-                        <div class="Contenido-txt-descripcion">
-                            <p>Itália </p>
-                            <h2>$3500</h2>
-                        </div>
-    
+                        <p>Itália </p>
+                        <h2>$3500</h2>
                     </div>
     
                     <div class="contenido-img-card">
-                        <img src="Img/Botella-Vino-Moscato.png" alt="botella vino Moscato">
+                        <img src="img/Botella-Vino-Moscato.png" alt="botella vino Moscato">
                     </div>
     
                 </div>
             </a>
         </div>
         <!----------------------CARD 3------------------------->
-    
-    
         <div class="item-card col- item-3">
             <a href="/Pages/Vinos.html">
-    
                 <div class="fondo-card">
-                    <img src="Img/Card-Fondo 1.png" alt="fondo paisaje viñedo">
+                    <img src="img/Card-Fondo 1.png" alt="fondo paisaje viñedo">
                 </div>
-    
                 <div class="contenido-card">
-    
                     <div class="contenido-txt-card">
                         <h2>Puesto del Marques</h2>
                         <p>Malbec - Tinto</p>
-                        <div class="Contenido-txt-descripcion">
-                            <p>Argentina</p>
-                            <h2>$3500</h2>
-                        </div>
-    
+                        <p>Argentina</p>
+                        <h2>$3500</h2>
                     </div>
     
                     <div class="contenido-img-card">
-                        <img src="Img/Botella-Vino-Tinto.png" alt="botella vino tinto">
+                        <img src="img/Botella-Vino-Tinto.png" alt="botella vino tinto">
+                    </div>
+    
+                </div>
+            </a>
+        </div>
+        <!-----------------CARD 4--------------------------------->
+        <div class="item-card col- item-4">
+            <a href="/Pages/Vinos.html">
+    
+                <div class="fondo-card">
+                    <img src="img/Card-Fondo 1.png" alt="fondo paisaje viñedo">
+                </div>
+                <div class="contenido-card">
+                    <div class="contenido-txt-card">
+                        <h2>Cullen<h2>
+                        <p>Sauvignon Blanc - Semillon</p>
+                        <p>Austrália </p>
+                        <h2>$3500</h2>
+                    </div>
+                    <div class="contenido-img-card">
+                        <img src="img/Botella-Vino-Blanco.png" alt="botella vino blanco">
+                    </div>
+    
+                </div>
+            </a>
+        </div>
+        <!----------------------CARD 5----------------------------->
+        <div class="item-card col- item-5">
+            <a href="/Pages/Vinos.html">
+                <div class="fondo-card">
+                    <img src="img/Card-Fondo 1.png" alt="fondo paisaje viñedo">
+                </div>
+                <div class="contenido-card">
+                    <div class="contenido-txt-card">
+                        <h2>Cá Bianca </h2>
+                        <p>Moscato - Blanco</p>
+                        <p>Itália </p>
+                        <h2>$3500</h2>
+                    </div>
+                    <div class="contenido-img-card">
+                        <img src="img/Botella-Vino-Moscato.png" alt="botella vino Moscato">
+                    </div>
+    
+                </div>
+            </a>
+        </div>
+        <!----------------------CARD 6------------------------->
+        <div class="item-card col- item-6">
+            <a href="/Pages/Vinos.html">
+                <div class="fondo-card">
+                    <img src="img/Card-Fondo 1.png" alt="fondo paisaje viñedo">
+                </div>
+                <div class="contenido-card">
+                    <div class="contenido-txt-card">
+                        <h2>Puesto del Marques</h2>
+                        <p>Malbec - Tinto</p>
+                        <p>Argentina</p>
+                        <h2>$3500</h2>
+                    </div>
+                    <div class="contenido-img-card">
+                        <img src="img/Botella-Vino-Tinto.png" alt="botella vino tinto">
                     </div>
     
                 </div>
@@ -276,13 +307,13 @@
 
 
     <div class="grid-ofertas row-1">
-        <!--card oferta vinos-->
-        <!----------------------CARD 4------------------------------>
-        <div class="item-card col- item-4">
+        <!--card oferta cervezas-->
+        <!----------------------CARD 1------------------------------>
+        <div class="item-card col- item-1">
             <a href="/Pages/Vinos.html">
     
                 <div class="fondo-card">
-                    <img src="Img/Card-Fondo 2.png" alt="fondo paisaje viñedo">
+                    <img src="img/Card-Fondo 2.png" alt="fondo paisaje viñedo">
                 </div>
     
                 <div class="contenido-card">
@@ -297,21 +328,18 @@
                     </div>
     
                     <div class="contenido-img-card">
-                        <img src="Img/Botella-Cerveza-Blumenau.png" alt="Botella-Cerveza-Blumenau">
+                        <img src="img/Botella-Cerveza-Blumenau.png" alt="Botella-Cerveza-Blumenau">
                     </div>
     
                 </div>
             </a>
         </div>
-    
-        <!----------------------CARD 5-------------------------->
-    
-    
-        <div class="item-card col- item-5">
+        <!----------------------CARD 2-------------------------->  
+        <div class="item-card col- item25">
             <a href="Pages/Cervezas.html">
     
                 <div class="fondo-card">
-                    <img src="Img/Card-Fondo 2.png" alt="fondo paisaje viñedo">
+                    <img src="img/Card-Fondo 2.png" alt="fondo paisaje viñedo">
                 </div>
     
                 <div class="contenido-card">
@@ -327,20 +355,18 @@
                     </div>
     
                     <div class="contenido-img-card">
-                        <img src="Img/Botella-Cerveza-Coruja.png" alt="Botella-Cerveza-Coruja">
+                        <img src="img/Botella-Cerveza-Coruja.png" alt="Botella-Cerveza-Coruja">
                     </div>
     
                 </div>
             </a>
         </div>
-        <!----------------------CARD 6------------------------>
-    
-    
-        <div class="item-card col- item-6">
+        <!----------------------CARD 3------------------------>    
+        <div class="item-card col- item-3">
             <a href="Pages/cervezas.html">
     
                 <div class="fondo-card">
-                    <img src="Img/Card-Fondo 2.png" alt="fondo paisaje viñedo">
+                    <img src="img/Card-Fondo 2.png" alt="fondo paisaje viñedo">
                 </div>
     
                 <div class="contenido-card">
@@ -355,7 +381,86 @@
                     </div>
     
                     <div class="contenido-img-card">
-                        <img src="Img/Botella-Cerveza-Paulaner.png" alt="Botella-Cerveza-Paulaner.png">
+                        <img src="img/Botella-Cerveza-Paulaner.png" alt="Botella-Cerveza-Paulaner.png">
+                    </div>
+    
+                </div>
+            </a>
+        </div>
+        <!----------------------CARD 4------------------------------>
+        <div class="item-card col- item-4">
+            <a href="/Pages/Vinos.html">
+    
+                <div class="fondo-card">
+                    <img src="img/Card-Fondo 2.png" alt="fondo paisaje viñedo">
+                </div>
+    
+                <div class="contenido-card">
+    
+                    <div class="contenido-txt-card">
+                        <h2>Blumenau</h2>
+                        <p>Cerveza</p>
+                        <div class="Contenido-txt-descripcion">
+                            <p>Austrália</p>
+                            <h2>$3500</h2>
+                        </div>
+                    </div>
+    
+                    <div class="contenido-img-card">
+                        <img src="img/Botella-Cerveza-Blumenau.png" alt="Botella-Cerveza-Blumenau">
+                    </div>
+    
+                </div>
+            </a>
+        </div>
+        <!----------------------CARD 5-------------------------->
+        <div class="item-card col- item-5">
+            <a href="Pages/Cervezas.html">
+    
+                <div class="fondo-card">
+                    <img src="img/Card-Fondo 2.png" alt="fondo paisaje viñedo">
+                </div>
+    
+                <div class="contenido-card">
+    
+                    <div class="contenido-txt-card">
+                        <h2>Coruja</h2>
+                        <p>Cerveza</p>
+                        <div class="Contenido-txt-descripcion">
+                            <p>Austrália</p>
+                            <h2>$3500</h2>
+                        </div>
+    
+                    </div>
+    
+                    <div class="contenido-img-card">
+                        <img src="img/Botella-Cerveza-Coruja.png" alt="Botella-Cerveza-Coruja">
+                    </div>
+    
+                </div>
+            </a>
+        </div>
+        <!----------------------CARD 6------------------------>    
+        <div class="item-card col- item-6">
+            <a href="Pages/cervezas.html">
+    
+                <div class="fondo-card">
+                    <img src="img/Card-Fondo 2.png" alt="fondo paisaje viñedo">
+                </div>
+    
+                <div class="contenido-card">
+    
+                    <div class="contenido-txt-card">
+                        <h2>Paulaner</h2>
+                        <p>Cerveza</p>
+                        <div class="Contenido-txt-descripcion">
+                            <p>Austrália</p>
+                            <h2>$3500</h2>
+                        </div>
+                    </div>
+    
+                    <div class="contenido-img-card">
+                        <img src="img/Botella-Cerveza-Paulaner.png" alt="Botella-Cerveza-Paulaner.png">
                     </div>
     
                 </div>
@@ -373,7 +478,11 @@
 
 
 <!--Inicio footer-->
-<footer class="footer page-footer font-small pt-4">
+
+
+
+
+<footer class="footer page-footer">
     
     <!-- Footer Links -->
     <div class="container-fluid">
@@ -448,6 +557,7 @@
 
         <!-- Inicio Grid column 5 nav-pago -->
         <div class="col- mx-auto">
+
             <nav class="nav-pago">
                 <h2>Medios de pago</h2>
                 <li class="footer-logos pago-logo">
@@ -456,6 +566,7 @@
                     <i class="fa-brands fa-cc-paypal"></i>
                 </li>
             </nav>
+
         </div>
         <!-- Fin Grid column 5 -->
 

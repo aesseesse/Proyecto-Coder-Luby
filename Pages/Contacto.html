@@ -20,46 +20,34 @@
 </head>
 
 <body>
-    <!--inicio Header-->
     <main>
-
-        <header>
-
-            <nav class="row navbar navbar-expand-sm navbar-dark">
-                <div class="header-logo col-5">
-                    <a href="../index.html" class="logo"><img src="../Img/Luby.png" alt="logo luby drinks"></a>
+        <!--inicio Header-->
+        <header class="header">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a href="../index.html" class="logo"><img src="../img/Luby.png" alt="logo luby drinks"></a>
+        
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item px-2"><a href="../Pages/Nosotros.html">Nosotros</a></li>
+                        <li class="nav-item px-2"><a href="../Pages/Servicios.html">Servicios</a></li>
+                        <li class="nav-item px-2"><a href="../Pages/Vinos.html">Vinos</a></li>
+                        <li class="nav-item px-2"><a href="../Pages/contacto.html">Contacto</a></li>
+                        <li class="nav-item px-2"><a href="../Pages/Cervezas.html">Cervezas</a></li>
+                        <li class="nav-item px-2"><a href="#top">Iniciar sesión</a></li>
+                        <li class="nav-item px-2"><a href="#top">Carrito</a></li>
+                    </ul>
+                    <form class="form-inline">
+                        <input class="form-control form-control-sm" type="search" placeholder="Buscar">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
                 </div>
-                <div class="header-menu col-">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#collapsibleNavbar">
-                        <!--<span class="navbar-toggler-icon"></span>-->
-                        <label class="container">
-                            <input type="checkbox">
-                            <div class="checkmark">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </label>
-                    </button>
-
-                    <div class="collapse navbar-collapse " id="collapsibleNavbar">
-                        <ul class="container-list-menu">
-                            <li class="nav-item"><a href="../Pages/Nosotros.html">Nosotros</a></li>
-                            <li class="nav-item"><a href="../Pages/contacto.html">Contacto</a></li>
-                            <li class="nav-item"><a href="../Pages/Servicios.html">Servicios</a></li>
-                            <li class="nav-item"><a href="../Pages/Vinos.html">Vinos</a></li>
-                            <li class="nav-item"><a href="../Pages/Cervezas.html">Cervezas</a></li>
-                            <li class="nav-item"><a href="#top">Iniciar sesión</a></li>
-                            <li class="nav-item"><a href="#top">Carrito</a></li>
-                        </ul>
-                    </div>
-                </div>
-
             </nav>
         </header>
-
-
         <!--Fin Header-->
 
         <!---------------------------------------------------------------->
@@ -96,7 +84,7 @@
 
 
         <!--Inicio footer-->
-        <footer class="footer page-footer font-small pt-4">
+        <footer class="footer page-footer">
 
             <!-- Footer Links -->
             <div class="container-fluid">
@@ -111,7 +99,7 @@
                         <nav class="nav-vinos">
                             <ul>
                                 <h2>Vinos</h2>
-                                <li><a href="../Pages/Vinos.html">Todos los vinos</a></li>
+                                <li><a href="Pages/Vinos.html">Todos los vinos</a></li>
                                 <li><a href="#top">Tintos</a></li>
                                 <li><a href="#top">Blancos</a></li>
                                 <li><a href="#top">Rosé</a></li>
@@ -129,7 +117,7 @@
                         <nav class="nav-cervezas">
                             <ul>
                                 <h2>Cervezas</h2>
-                                <li><a href="../Pages/Cervezas.html">Todas las cervezas</a></li>
+                                <li><a href="Pages/Cervezas.html">Todas las cervezas</a></li>
                             </ul>
                         </nav>
 
@@ -143,11 +131,11 @@
                         <nav class="nav-nosotros">
                             <ul>
                                 <h2>Nosotros</h2>
-                                <li><a href="../Pages/Nosotros.html">Sobre nosotros</a></li>
-                                <li><a href="../Pages/contacto.html">Contacto</a></li>
-                                <li><a href="../Pages/FAQ.html">Perguntas frecuentes</a></li>
-                                <li><a href="../Pages/work.html">Trabaja con nosotros</a></li>
-                                <li><a href="../Pages/mensajes.html">Mensajes</a></li>
+                                <li><a href="Pages/Nosotros.html">Sobre nosotros</a></li>
+                                <li><a href="Pages/contacto.html">Contacto</a></li>
+                                <li><a href="Pages/FAQ.html">Perguntas frecuentes</a></li>
+                                <li><a href="Pages/work.html">Trabaja con nosotros</a></li>
+                                <li><a href="Pages/mensajes.html">Mensajes</a></li>
                             </ul>
                         </nav>
 
@@ -174,6 +162,7 @@
 
                     <!-- Inicio Grid column 5 nav-pago -->
                     <div class="col- mx-auto">
+
                         <nav class="nav-pago">
                             <h2>Medios de pago</h2>
                             <li class="footer-logos pago-logo">
@@ -182,6 +171,7 @@
                                 <i class="fa-brands fa-cc-paypal"></i>
                             </li>
                         </nav>
+
                     </div>
                     <!-- Fin Grid column 5 -->
 
@@ -214,7 +204,7 @@
 
             <!-- Copyright -->
             <div class="footer-copyright text-center py-1">
-                <p>© 2023 Copyright: <a href="../index.html">lubydrinks.com.ar</a></p>
+                <p>© 2023 Copyright: <a href="index.html">lubydrinks.com.ar</a></p>
             </div>
             <!-- Copyright -->
 

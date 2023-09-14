@@ -11,6 +11,7 @@
 :root{
     /*Colors*/
     --color-principal:#B13251;
+    --color-background-nav: #B13251;
     --color-background:#f5f5f5;
 
     --color-font: rgb(38, 38, 38);
@@ -23,37 +24,91 @@
 
 
     /*Font size*/
-    /*cell*/
-    --font-h2: 1.5vw;
-    --font-h3: 2vw;
-    --font-h4: 1vw;
-    --font-p: 1vw;
-    --font-a: 1vw;
+    /*PC*/
 
-    --font-h2-banner: 3vw;
-    --font-h3-banner: 4vw;
-    --font-h4-banner:2vw;
-    --font-p-banner: 2vw;
-    --font-a-banner: 2vw;
+    --font-h2-header: 20px;
+    --font-h3-header: 18px;
+    --font-h4-header: 14px;
+    --font-p-header: 12px;
+    --font-a-header: 18px;
+
+    --font-h2-body: 30px;
+    --font-h3-body: 26px;
+    --font-h4-body: 22px;
+    --font-p-body: 14px;
+    --font-a-body: 18px;
+
+    --font-h2-banner: 40px;
+    --font-h3-banner: 60px;
+    --font-p-banner: 22px;
+    --font-a-banner: 32px;
     
+    --font-h2-card: 24px;
+    --font-h3-card: 16px;/*no usada*/
+    --font-h4-card:14px;/*no usada*/
+    --font-p-card: 14px;
+    --font-a-card: 12px;/*no usada*/
+}
+
+/*Cell*/
+@media (max-width:425px) {
+    body {
+        --font-h2-header: 12px;
+        --font-h3-header: 10px;
+        --font-h4-header: 8px;
+        --font-p-header: 8px;
+        --font-a-header: 10px;
+
+        --font-h2-banner: 14px;
+        --font-h3-banner: 120px;
+        --font-p-banner: 8px;
+        --font-a-banner: 10px;
+
+        --font-h2-body: 12px;
+        --font-h3-body: 10px;
+        --font-h4-body: 10px;
+        --font-p-body: 10px;
+        --font-a-body: 10px;
+
+        --font-h2-card: 16px;
+        --font-h3-card: 10px;
+        /*no usada*/
+        --font-h4-card: 10px;
+        /*no usada*/
+        --font-p-card: 10px;
+        --font-a-card: 10px;
+        /*no usada*/
+    }
 }
 
 /*Tablet*/
-@media (min-width:768px) {
+@media (max-width:768px) {
     body {
-        --font-h2:14px;
-        --font-h3:12px;
-        --font-h4:10px;
-        --font-p:8px;
-    }
-}
-/*PC*/
-@media (min-width:1280px) {
-    body {
-        --font-h2:16px;
-        --font-h3:14px;
-        --font-h4:12px;
-        --font-p:10px;
+        --font-h2-header: 14px;
+        --font-h3-header: 12px;
+        --font-h4-header: 10px;
+        --font-p-header: 10px;
+        --font-a-header: 12px;
+
+        --font-h2-body: 22px;
+        --font-h3-body: 18px;
+        --font-h4-body: 16px;
+        --font-p-body: 14px;
+        --font-a-body: 14px;
+
+        --font-h2-banner: 12px;
+        --font-h3-banner: 14px;
+        --font-p-banner: 10px;
+        --font-a-banner: 12px;
+
+        --font-h2-card: 18px;
+        --font-h3-card: 12px;
+        /*no usada*/
+        --font-h4-card: 12px;
+        /*no usada*/
+        --font-p-card: 12px;
+        --font-a-card: 12px;
+        /*no usada*/
     }
 }
 
@@ -77,160 +132,44 @@ body{
     position: relative;
     padding-bottom: 3em;
     min-height: 100vh;
-}
-
-
-
-
-
-/* Hide the default checkbox */
-.container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-  }
-  
-  .container {
-    display: block;
-    position: relative;
-    cursor: pointer;
-    font-size: var(--font-a);
-    user-select: none;
-  }
-  
-  .checkmark {
-    position: relative;
-    top: 0;
-    left: 0;
-    height: 1.3em;
-    width: 1.3em;
-  }
-  
-  .checkmark span {
-    width: 16px;
-    height: 1px;
-    background-color: var(--color-background);
-    position: absolute;
-    transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-  }
-  
-  .checkmark span:nth-child(1) {
-    top: 10%;
-  }
-  
-  .checkmark span:nth-child(2) {
-    top: 50%;
-  }
-  
-  .checkmark span:nth-child(3) {
-    top: 90%;
-  }
-  
-  .container input:checked + .checkmark span:nth-child(1) {
-    top: 50%;
-    transform: translateY(-50%) rotate(45deg);
-    -webkit-transform: translateY(-50%) rotate(45deg);
-    -moz-transform: translateY(-50%) rotate(45deg);
-    -ms-transform: translateY(-50%) rotate(45deg);
-    -o-transform: translateY(-50%) rotate(45deg);
-  }
-  
-  .container input:checked + .checkmark span:nth-child(2) {
-    top: 50%;
-    transform: translateY(-50%) rotate(-45deg);
-    -webkit-transform: translateY(-50%) rotate(-45deg);
-    -moz-transform: translateY(-50%) rotate(-45deg);
-    -ms-transform: translateY(-50%) rotate(-45deg);
-    -o-transform: translateY(-50%) rotate(-45deg);
-  }
-  
-  .container input:checked + .checkmark span:nth-child(3) {
-    transform: translateX(-50px);
-    -webkit-transform: translateX(-50px);
-    -moz-transform: translateX(-50px);
-    -ms-transform: translateX(-50px);
-    -o-transform: translateX(-50px);
-    opacity: 0;
-  }
-
-
-
-.navbar-toggler{
-    border: none;
-    padding: 0 10px; 
-    
-}
-.navbar-toggler-icon{
-    height: 25px;
-}
-
-.row {
-    background-color: var(--color-principal);
-    width: auto;
 
 }
 
-.header-logo{
-    padding: 0 10px;
-    justify-content: start;
-    align-items: start;
-    
 
+
+
+/*------------- Inicio header---------------------*/
+
+.navbar{
+    background-color: var(--color-background-nav) !important;
 }
 
 .logo img{
-    width: auto;
     height: 2rem;
-    object-fit: cover;
-    text-align: left;
+    object-fit: scale-down;
 }
 
-
-
-
-.container-list-menu {
-    margin: 2px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: left;
-    flex-direction: column; 
+.navbar-toggler{
+    position: relative;
+    color: var(--color-background) !important;
+    height: 1.5rem;
+    width: 1.5rem;
 }
 
-@media (min-width:768px) {
-    .container-list-menu {
-        margin: 2px;
-        display: flex;
-        align-items: flex-end;
-        justify-content: right;
-        flex-direction: row; 
-        margin: 0 10px;
-    }
-    .container-list-menu li{
-        margin: 0 10px;
-    }
+.navbar-toggler-icon{
+    position: absolute;
+    left: +20%;
+    top: 20%;
+    color: var(--color-background) !important;
+    height: 1rem;
+    width: 1rem;
 }
 
-.container-list-menu .nav-item a{
-    color: var(--color-background);
-    font-size: var(--font-a);
-    
+.header .nav-item a {
+    font-size: var(--font-a-header);
+    color: var(--color-font-header);
 }
 
-.container-list-menu a:hover {
-    font-weight: bold;
-}
-
-.header-menu li{
-    display:inline-block;
-    padding: auto;
-    justify-content: right;
-}
 
 /*------------- fin header---------------------*/
 
@@ -248,12 +187,13 @@ body{
 /*Inicio Carousel*/
 .carousel{ /*contenedor slide carousel*/
     position: relative;
+    width: 100%;
 }
 
 /*inicio controles*/
 .carousel-indicators{
     position: absolute;
-    top: 80%;
+    top: 90%;
 }
 
 .carousel-control-prev{ /*control prev*/
@@ -275,8 +215,7 @@ body{
 .carousel-inner img {
     /*imagen*/
     width: 100%;
-    height: 110%;
-    object-fit: scale-down;
+    object-fit: cover;
     object-position: center;
 }
 
@@ -287,16 +226,24 @@ body{
     background-color: var(--color-shadow-white);
     border-radius: 5%;
     text-align:center;
-    width:45%;
-    height: 75%;
+    width:fit-content;
+    height: fit-content;
     left: 10%;
-    top: 10%;
+    top: 20%;
     padding: 2%;
+}
+@media (max-width:425px){
+    .carousel-content {
+        width: 60%;
+        left: 10%;
+        top: 10%
+    }
 }
 
 .carousel-txt{
     color: var(--color-font-header);
-    margin:0%;
+    margin:1%;
+
 }
 
 .carousel-button{
@@ -305,37 +252,33 @@ body{
 
 .btn{
    border: none;
+   font-size: var(--font-a-banner) !important;
+   color: var(--color-font-header);
+   font-weight:bolder;
+   background-color: var(--color-principal);
+   line-height: normal;    
+   margin:0%;
 }
-.carousel-txt h2{
-    font-size: var(--font-h2-banner) /*8px*/;
-    font-weight: bold;
-    margin:0%;
 
+.carousel-txt h2{
+    font-size: var(--font-h2-banner)!important /*8px*/;
+    font-weight: bold;
+    margin:1%;
 }
 
 .carousel-txt h3{
     color: var(--color-font-header);
-    font-size: var(--font-h3-banner) /*10px*/;
+    font-size: var(--font-h3-banner) !important/*10px*/;
     font-weight:bolder;
     background-color: var(--color-principal);
-    margin:0%;
-
+    margin:1%;
 }
 .carousel-txt p{
-    font-size: var(--font-p-banner) /* 6px*/;
+    font-size: var(--font-p-banner) !important/* 6px*/;
     line-height: normal;
     margin:0%;
-
 }
 
-.carousel-button a{
-    color: var(--color-font-header);
-    font-size: var(--font-h2-banner) /*10px*/;
-    font-weight:bolder;
-    background-color: var(--color-principal);
-    line-height: normal;    margin:0%;
-
-}
 
 /*fin Carousel*/
 
@@ -377,7 +320,7 @@ body{
 
 .selector-filtro h2 {
     width: auto;
-    font-size: var(--font-h2-banner); /*12px*/
+    font-size: var(--font-h2-body); /*12px*/
     font-weight: bold;
     color: var(--color-font);
     font-family: 'mulish';
@@ -386,14 +329,14 @@ body{
 .lista-opciones a {
     color: var(--color-font);
     font-family: 'mulish';
-    font-size: var(--font-h2-banner); /*10 px*/
+    font-size: var(--font-a-body); /*10 px*/
     margin: 0px 10px;
 }
 
 .lista-opciones a:hover {
     color: var(--color-principal);
     font-family: 'mulish';
-    font-size: var(--font-h2-banner); /*12px*/
+    font-size: var(--font-a-body); /*12px*/
     font-weight: bold;
 }
 
@@ -418,9 +361,7 @@ body{
 
 /*Inicio Cards*/
 .item-card{/*card*/
-    width: 300px;
-    height: 350px;
-    padding: 1vw;
+    padding: 1%;
     position: relative;
 }
 
@@ -434,17 +375,15 @@ body{
 
 /*contenido dentro de la card botella + texto*/
 .contenido-card{ 
-    display: inline;
-    align-items: end;
-    padding: 10%;
-    
+    display: inline-block;
+    padding: 5%; 
 }
 
 
 
 .contenido-img-card img{/*imagen derecha*/
     position: absolute;
-    height: 60%;
+    height: 75%;
     z-index: 10;
     right: 10%;
     top: -5%;
@@ -452,14 +391,14 @@ body{
 
 .contenido-txt-card{/*text*/
     background-color: var(--color-shadow-black);
-    height: fit-content;
+    height: 50%;
+    width: 50%;
     border-radius: 8px;
     text-align: center;
-    padding: 3%;
     position:absolute;
     z-index: 10;
-    left: 10%;
-    bottom: 50%;
+    left: 20%;
+    bottom: 25%;
         
 }
 
@@ -474,7 +413,7 @@ body{
 .contenido-txt-card h2{
     color: var(--color-font-header);
     font-family: 'Mulish';
-    font-size: var(--font-h2);
+    font-size: var(--font-h2-card);
     margin: 0;
     padding: 1px;
 
@@ -483,7 +422,7 @@ body{
 .contenido-txt-card p{
     color: var(--color-font-header);
     font-family: 'Mulish';
-    font-size: var(--font-p);
+    font-size: var(--font-p-card);
     margin: 0;
     padding: 1px;
 }
@@ -509,8 +448,13 @@ body{
 
 /*Inicio footer*/
 .footer{
-    color: var(--color-font-header);
     width: 100%;
+    background-color: var(--color-background-nav);
+}
+.container-fluid{
+    color: var(--color-font-header);
+    width: 95%;
+    padding: 1%;
     position: relative;
 }
 
@@ -521,28 +465,31 @@ body{
 
 
 .nav-correo{
+    width: 400px;
     margin: 5px;
 }
+
 .nav-correo-txt .nav-correo-input {
     object-position: center;
     max-width: 190px;
-    color: var(--font-p);
+    color: var(--font-p-header);
 }
 
 .input-mail {
     width: 200px;
-    font-size: var(--font-p);
+    font-size: var(--font-p-header);
     color: var(--color-font-principal);
     border: 2px solid var(--color-font-header);
     border-radius: 5px;
     padding: 3px 15px;
+    margin: 5px;
   }
   
 .Subscribe {
     border: none;
     background-color: var(--color-background);
     text-decoration: none;
-    font-size: var(--font-h2);
+    font-size: var(--font-h2-header);
     color: var(--color-font-principal);
     border-radius: 5px;
     padding: 3px 15px;
@@ -559,21 +506,21 @@ body{
 
 
 
-.footer h2{
-    font-size: var(--font-h2);
+.container-fluid h2{
+    font-size: var(--font-h2-header);
     font-weight: bold;
     align-items: center;
     text-align: center;
     margin: 1px;
 }
 
-.footer a {
+.container-fluid a {
     color: var(--color-background);
-    font-size: var(--font-a);
+    font-size: var(--font-a-header);
 
 }
 
-.footer a:hover {
+.container-fluid a:hover {
     font-weight: bold !important;
 }
 
@@ -585,7 +532,8 @@ body{
 
 
 .footer-copyright p{
-    font-size: var(--font-h2);
+    font-size: var(--font-h2-header);
+    color: var(--color-font-principal); 
     font-weight: bold;
     align-items: center;
     text-align: center;
@@ -595,6 +543,13 @@ body{
 
 
 /*Fin footer*/
+
+
+
+
+
+
+
 
 
 
@@ -623,7 +578,7 @@ body{
     justify-content: center;
 }
 .form-contact h2{
-    font-size: var(--font-h2);
+    font-size: var(--font-h2-body);
 }
 
 
@@ -641,7 +596,7 @@ body{
     border-radius: 8px;
     width: 100%;
     height: auto;
-    font-size: var(--font-h3);
+    font-size: var(--font-h3-body);
 }
   
 .form-message{
@@ -653,7 +608,7 @@ body{
     width: 100%;
     padding: 8px 14px;
     border: 1px solid var(--color-font-principal);
-    font-size: var(--font-h3);
+    font-size: var(--font-h3-body);
 
 }
   
@@ -662,7 +617,7 @@ body{
     outline: 0;
     border: 0;
     border-radius: 8px;
-    font-size: var(--font-h2);
+    font-size: var(--font-h2-body);
     font-weight: 500;
     background-color: var(--color-font-principal);
     color: var(--color-background);
@@ -675,33 +630,64 @@ body{
 
 /*Inicio Page Nosotros*/
 
- .section-nosotros {
-    display: flex;
+ .content {
+    display: inline-block;
     place-content: center;
     height: fit-content;
   }
 
-  .container-nosotros {
-    display: flex;
+  .container-us {
+    position: relative;
+    display: inline-block;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    gap: 10px;
-    margin: 10px;
-    width: 300px;
     background-color: var(--color-background);
-    padding: 20px;
-    border-radius: 10px;
+  }
+  .container-1{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .container-1-img{
+    display: inline-block;
+    position: absolute;
+    width: 50%;
+    height: auto;
+  }
+
+  .container-1-img img{
+    object-fit: scale-down;
+  }
+
+  .container-1-txt{
+    display: inline-block;
+
+    position: absolute;
+    width: 50%;
+    right: 50%;
   }
 
   .container-us h2{
-    font-size: var(--font-h2);
+    font-size: var(--font-h2-body);
   }
 
   .container-us p{
-    font-size: var(--font-p);
+    font-size: var(--font-p-body);
     text-align: center;
   }
 
 
 /*Fin Page Nosotros*/
+
+
+/*---------Servicios---------*/
+
+.servicios-nav a{
+    font-size: var(--font-a-body) !important;
+    color: var(--color-font-principal) !important;
+}
+
+.servicios-nav a:hover {
+    font-weight: bold !important;
+}
