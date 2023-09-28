@@ -20,6 +20,8 @@
     h2 {
         color: $color-font-header;
         font-size: $font-h2-card;
+        margin: 0;
+        padding: 0;
     }
 
     h3 {
@@ -30,6 +32,8 @@
     p {
         color: $color-font-header;
         font-size: $font-p-card;
+        margin: 0;
+        padding: 0;
     }
     /*contenido dentro de la card botella + texto*/
     .contenido-card {
@@ -39,7 +43,7 @@
         /*text*/
         .contenido-txt-card {
             height: fit-content;
-            width: 220px;
+            width: 200px;
             text-align: center;
             background-color: $color-shadow-black;
             border-radius: 5%;
@@ -51,6 +55,7 @@
         .contenido-img-card {
             img {
                 width: 60px;
+                height: auto;
             }
         }
     }

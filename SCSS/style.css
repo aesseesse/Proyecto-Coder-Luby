@@ -580,6 +580,8 @@ Cell
 .item-card-cerveza h2 {
   color: white;
   font-size: 125%;
+  margin: 0;
+  padding: 0;
 }
 .item-card-cerveza h3 {
   color: white;
@@ -588,6 +590,8 @@ Cell
 .item-card-cerveza p {
   color: white;
   font-size: 90%;
+  margin: 0;
+  padding: 0;
 }
 .item-card-cerveza .contenido-card {
   display: flex;
@@ -599,7 +603,7 @@ Cell
 .item-card-cerveza .contenido-card .contenido-txt-card {
   height: -moz-fit-content;
   height: fit-content;
-  width: 220px;
+  width: 200px;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 5%;
@@ -608,6 +612,7 @@ Cell
 }
 .item-card-cerveza .contenido-card .contenido-img-card img {
   width: 60px;
+  height: auto;
 }
 
 /*------------- Fin card cerveza---------------------*/
@@ -632,6 +637,8 @@ Cell
 .item-card-vino h2 {
   color: white;
   font-size: 125%;
+  margin: 0;
+  padding: 0;
 }
 .item-card-vino h3 {
   color: white;
@@ -640,6 +647,8 @@ Cell
 .item-card-vino p {
   color: white;
   font-size: 90%;
+  margin: 0;
+  padding: 0;
 }
 .item-card-vino .contenido-card {
   display: flex;
@@ -651,7 +660,7 @@ Cell
 .item-card-vino .contenido-card .contenido-txt-card {
   height: -moz-fit-content;
   height: fit-content;
-  width: 220px;
+  width: 200px;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 5%;
@@ -660,6 +669,7 @@ Cell
 }
 .item-card-vino .contenido-card .contenido-img-card img {
   width: 60px;
+  height: auto;
 }
 
 /*------------- fin card vino---------------------*/
