@@ -5,20 +5,26 @@
     background-image: url(./../Img/Card-Fondo\ 2.png);
     background-repeat:round;
     background-size:contain;
-    width: 400px;
-    height: 300px;
+    width: 300px;
+    height: 200px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     border-radius: 5%;
+
     
     &:hover {
-        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
-        }
+        box-shadow: 15px 15px 5px 0px rgba(0, 0, 0, 0.25);
+    }
 
     h2 {
         color: $color-font-header;
         font-size: $font-h2-card;
+    }
+
+    h3 {
+        color: $color-font-header;
+        font-size: $font-h3-card;
     }
 
     p {
@@ -37,8 +43,8 @@
             text-align: center;
             background-color: $color-shadow-black;
             border-radius: 5%;
-            margin: 30px;
-            padding: 5px;   
+            margin: 10px;
+            padding: 5px;
         }
 
         /*imagen derecha*/

@@ -199,7 +199,7 @@ Cell
   display: block;
 }
 .master-container .cart .products p {
-  font-size: 100%;
+  font-size: 90%;
   color: #7a7c81;
 }
 .master-container .cart .quantity {
@@ -218,7 +218,7 @@ Cell
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 100%;
+  font-size: 90%;
   font-weight: bold;
   color: #47484b;
 }
@@ -245,7 +245,7 @@ Cell
 }
 .master-container .coupons form .input_field {
   width: auto;
-  font-size: 100% !important;
+  font-size: 90% !important;
   padding: 0 0 0 12px;
   border-radius: 5px;
   outline: none;
@@ -254,10 +254,10 @@ Cell
   transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
 }
 .master-container .coupons form .input_field::-moz-placeholder {
-  font-size: 100%;
+  font-size: 90%;
 }
 .master-container .coupons form .input_field::placeholder {
-  font-size: 100%;
+  font-size: 90%;
 }
 .master-container .coupons form .input_field:focus {
   border: 1px solid transparent;
@@ -317,7 +317,7 @@ Cell
 }
 .master-container .checkout .checkout--footer .price {
   position: relative;
-  font-size: 150%;
+  font-size: 125%;
   font-weight: bold;
   color: #2B2B2F;
 }
@@ -566,8 +566,8 @@ Cell
   background-image: url(./../Img/Card-Fondo\ 2.png);
   background-repeat: round;
   background-size: contain;
-  width: 400px;
-  height: 300px;
+  width: 300px;
+  height: 200px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -575,15 +575,19 @@ Cell
   /*contenido dentro de la card botella + texto*/
 }
 .item-card-cerveza:hover {
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 15px 15px 5px 0px rgba(0, 0, 0, 0.25);
 }
 .item-card-cerveza h2 {
   color: white;
-  font-size: 150%;
+  font-size: 125%;
+}
+.item-card-cerveza h3 {
+  color: white;
+  font-size: 125%;
 }
 .item-card-cerveza p {
   color: white;
-  font-size: 100%;
+  font-size: 90%;
 }
 .item-card-cerveza .contenido-card {
   display: flex;
@@ -599,7 +603,7 @@ Cell
   text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 5%;
-  margin: 30px;
+  margin: 10px;
   padding: 5px;
 }
 .item-card-cerveza .contenido-card .contenido-img-card img {
@@ -614,8 +618,8 @@ Cell
   background-image: url(./../Img/Card-Fondo\ 1.png);
   background-repeat: round;
   background-size: contain;
-  width: 400px;
-  height: 300px;
+  width: 300px;
+  height: 200px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -623,15 +627,19 @@ Cell
   /*contenido dentro de la card botella + texto*/
 }
 .item-card-vino:hover {
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 15px 15px 5px 0px rgba(0, 0, 0, 0.25);
 }
 .item-card-vino h2 {
   color: white;
-  font-size: 150%;
+  font-size: 125%;
+}
+.item-card-vino h3 {
+  color: white;
+  font-size: 125%;
 }
 .item-card-vino p {
   color: white;
-  font-size: 100%;
+  font-size: 90%;
 }
 .item-card-vino .contenido-card {
   display: flex;
@@ -647,7 +655,7 @@ Cell
   text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 5%;
-  margin: 30px;
+  margin: 10px;
   padding: 5px;
 }
 .item-card-vino .contenido-card .contenido-img-card img {
