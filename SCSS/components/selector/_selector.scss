@@ -1,52 +1,44 @@
 /*Inicio ofertas destacadas*/
 .selector-filtro {
     /*contenedor filtro*/
-    display: block;
+    display: grid;
+    grid-template: 
+        "txt-title txt-title txt-title" 1fr
+        "txt-subtitle1 txt-subtitle2 txt-subtitle3" 1fr;
     margin: auto;
     align-items: center;
     text-align: center;
     width: 100%;
     padding: 10px;
+    color: $color-font;
+    h2 {
+        font-weight: bold;
+    }
 
-    .txt-ofertas {
-            width: 100%;
-            padding: 0;
-            margin: 0;
-        }
-        
-    .lista-opciones{
-        ul li {
-            display: inline-flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 0;
-            margin: 0;
-        }
-    
-        h2 {
-            width: auto;
-            font-size: var(--font-h2-body);
-            /*12px*/
+    a{
+        font-size: $font-a-body;
+        text-decoration: none;
+        color: $color-font;
+        &:hover {
             font-weight: bold;
-            color: var(--color-font);
-            font-family: 'mulish';
-        }
-    
-        a {
-            color: var(--color-font);
-            font-family: 'mulish';
-            font-size: var(--font-a-body);
-            /*10 px*/
-            margin: 0px 10px;
-        }
-    
-        a:hover {
-            color: var(--color-principal);
-            font-family: 'mulish';
-            font-size: var(--font-a-body);
-            /*12px*/
-            font-weight: bold;
+            font-size: $font-a-body*1.2;
         }
     }
+
+
+    .txt-titulo {
+        grid-area: txt-title;
+        }
+    
+    .txt-subtitulo1{
+        grid-area: txt-subtitle1 ;
+    }
+    .txt-subtitulo1 {
+        grid-area: txt-subtitle1;
+    }
+    .txt-subtitulo1 {
+        grid-area: txt-subtitle1;
+    }
 }
+
 /*Fin ofertas destacadas*/

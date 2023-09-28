@@ -1,63 +1,51 @@
-/*Inicio Cards*/
+/*------------- inicio card vino---------------------*/
 .item-card-vino {
     /*card*/
     margin: 15px 2%;
-    background-image: url(./Img/Card-Fondo\ 1.png);
-    background-repeat: no-repeat;
+    background-image: url(./../../../Img/Card-Fondo\ 1.png);
+    background-repeat: round;
     background-size: contain;
     width: 400px;
     height: 300px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    border-radius: 5%;
+    &:hover {
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    h2 {
+        color: $color-font-header;
+        font-size: $font-h2-card;
+    }
+
+    p {
+        color: $color-font-header;
+        font-size: $font-p-card;
+    }
 
     /*contenido dentro de la card botella + texto*/
     .contenido-card {
         display: flex;
         justify-content: center;
         align-items: center;
-
-        /*imagen derecha*/
-        img{
-                width: 60px;
-            }
-            
         /*text*/
         .contenido-txt-card {
             height: fit-content;
             width: 220px;
-            padding: 5%;
             text-align: center;
-            background-color: $color-shadow-white;
+            background-color: $color-shadow-black;
             border-radius: 5%;
-                h2{
-                    color: $color-font-header;
-                    font-family: 'Mulish';
-                    font-size: $font-h2-card;
-                }
-            
-                p{
-                    color: $color-font-header;
-                    font-family: 'Mulish';
-                    font-size: $font-p-card;
-                }
+            margin: 30px;
+            padding: 5px;
         }
-
+        /*imagen derecha*/
+        .contenido-img-card{
+            img{
+                width: 60px;
+            }
+        }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*Fin Cards en home*/
+/*------------- fin card vino---------------------*/

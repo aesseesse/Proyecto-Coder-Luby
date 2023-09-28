@@ -1,69 +1,89 @@
 /*------------- Inicio header---------------------*/
 
-
 .header {
     /*fondo*/
     background-color: $color-background-nav !important;
-    display: grid;
-    width: 100vw;
-    grid-area:
-        "hlogo hsearch hmenu" 1fr
-        "hlogo hsearch hmenu" 1fr;
-
-
-    /*logo*/
-    .header-logo {
-        grid-area: hlogo;
-        .header-logo img {
-            height: 0.5rem;
-            object-fit: scale-down;
-        }
-    }
-    /*search*/
-    .header-search {
-        grid-area: hsearch;
-        font-weight: lighter;
-        margin: auto;
-
-        .form-control {
-            font-size: $font-p-header !important;
-            width: 30vw;
-            height: 2rem;
-            margin: auto;
-        }
-
-        a {
-            font-size: $font-a-header !important;
-            color: $color-font-header;
-            margin: auto;
-        }
-    }
+    .container-fluid{
+        display: grid;
+        width: 100vw;
+        grid-template:
+            "hlogo hsearch hmenu" 1fr
+            "hlogo hsearch hmenu" 1fr;
+        
+        /*logo*/
+        .header-logo {
+            grid-area: hlogo;
     
-    /*Menu*/
-    .header-navbar {
-        grid-area: hmenu;
-        .navbar-toggler {
-            border: none;
+            img {
+                height: 3rem;
+                object-fit: scale-down;
+            }
         }
-        a {
-            /*lista navbar*/
-            font-size: $font-a-header !important;
-            color: $color-font-header;
-            margin: 0 auto;
+    
+        /*search*/
+        .header-search {
+            grid-area: hsearch;
             font-weight: lighter;
+            margin: auto;
+    
+            .form-control {
+                font-size: $font-p-header !important;
+                width: 35vw;
+                margin: auto;
+            }
+    
+            .btn {
+                font-size: $font-p-header !important;
+                color: $color-font-header;
+                margin: auto;
+                border-color: $color-font-header;
+            }
+        }
+    
+        /*Menu*/
+        .header-navbar {
+            grid-area: hmenu;
+            justify-self: right;    
+            .navbar-toggler {
+                border: none;
+                color: $color-font-header !important;   
+            }
+    
+            a {
+                /*lista navbar*/
+                font-size: $font-a-header !important;
+                color: $color-font-header;
+                text-decoration: none;
+                margin: 0 auto;
+            }
+        }
+    
+    }
+}
+
+@media (max-width:426px) {
+    .header {
+        .container-fluid {
+            display: grid;
+            grid-template:
+                "hlogo hlogo hmenu" 1fr "hsearch hsearch hsearch" 1fr;
+
+            .header-logo {
+                img {
+                    height: 2rem;
+                }
+            }
+
+            .header-search {
+                margin: 5px;
+                .form-control {
+                    width: 50vw;
+                }
+            }
+
         }
     }
 }
 
-@media (max-width:425px) {
-    .header {
-        grid-area:
-            "hlogo hmenu hmenu" 1fr "hsearch hsearch hsearch" 1fr;
-    }
-
-    .header-logo img {
-        height: 1rem;
-    }
-}
 
 /*------------- fin header---------------------*/

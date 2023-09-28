@@ -4,12 +4,39 @@
     position: relative;
     width: 100%;
 
+    h2 {
+        font-size: $font-h2-banner;
+        font-weight: normal;
+        margin: 1%;
+    }
+
+    h3 {
+        color: $color-font-header;
+        font-size: $font-h3-banner !important;
+        font-weight: bolder;
+        background-color: $color-principal;
+        margin: 1%;
+    }
+
+    p {
+        font-size: $font-p-banner !important;
+        line-height: normal;
+        margin: 0%;
+    }
+
+    a {
+        font-size: $font-a-banner !important;
+        color: $color-font-header;
+        font-weight: normal;
+    }
+
     /*inicio controles*/
+    .Controls{
         .carousel-indicators {
-            position: absolute;
-            top: 90%;
-        }
-    
+                position: absolute;
+                top: 90%;
+            }
+        
         .carousel-control-prev {
             /*control prev*/
             left: -1%;
@@ -23,94 +50,71 @@
             z-index: 1;
             position: absolute;
         }
-    
+    }   
     /*fin controles*/
 
-        /*inicio inner*/
-    
-        .carousel-inner img {
-            /*imagen*/
-            width: 100%;
-            object-fit: cover;
-            object-position: center;
-        }
-    
-        @media (max-width:425px) {
-            .carousel-inner img{
-                height: 30vh;
-            }
-    
-        }
-    
-    
-        /*texto de carousel*/
-    
-    
-        .carousel-content {
-            position: absolute;
-            top: 25%;
-            left: 10%;
-    
-        }
-    
-        .carousel-txt {
-            position: relative;
-            align-items: center;
-            background-color: $color-shadow-white;
-            border-radius: 5%;
-            text-align: center;
-            width: fit-content;
-            height: fit-content;
-            padding: 2%;
-            color: $color-font-header;
-            margin: 1%;
+    /*inicio inner*/
 
-                h2 {
-                    font-size: $font-h2-banner !important
-                        /*8px*/
-                    ;
-                    font-weight: bold;
-                    margin: 1%;
-                }
-            
-                h3 {
-                    color: $color-font-header;
-                    font-size: $font-h3-banner !important
-                        /*10px*/
-                    ;
-                    font-weight: bolder;
-                    background-color: $color-principal;
-                    margin: 1%;
-                }
-            
-                p {
-                    font-size: $font-p-banner !important
-                        /* 6px*/
-                    ;
-                    line-height: normal;
-                    margin: 0%;
-                }
-                .btn {
-                    border: none;
-                    font-size: $font-a-banner !important;
-                    color: $color-font-header;
-                    font-weight: bolder;
-                    background-color: $color-principal;
-                    line-height: normal;
-                    margin: 0%;
-                }
+    .carousel-inner{
+        .carousel-item{
+        /*imagen*/
+            img {
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+            .carousel-content {
+                position: absolute;
+                top: 25%;
+                left: 10%;
+                /*texto de carousel*/
+                    .carousel-txt {
+                        position: relative;
+                        align-items: center;
+                        background-color: $color-shadow-white;
+                        border-radius: 5%;
+                        text-align: center;
+                        width: fit-content;
+                        height: fit-content;
+                        padding: 2%;
+                        color: $color-font-header;
+                        margin: 1%;
+                             
+                        .btn {
+                            border: none;
+                            background-color: $color-principal;
+                            margin: 0%;
+                        }
+                    }
+            }
+
         }
-    
-    @media (max-width:425px) {
-        .carousel-content {
-            width: 60%;
-            left: 10%;
-            top: 10%
-        }
+
     }
+      
 }
+  
+        
+
 /*fin Carousel*/
 
 
 
 
+@media (max-width:426px) {
+
+    .carousel{
+        .carousel-inner {
+            .carousel-item {
+                img {
+                    height: 30vh;
+                }
+                .carousel-content {
+                    width: 60%;
+                    left: 10%;
+                    top: 10%
+                }
+            }
+        }
+    }
+}

@@ -4,413 +4,430 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Comprar vinos por Internet ahora es más facil. En Luby Drinks podes encontrar, comparar, y comprar los mejores vinos, cervezas y bebidas online. Entra y descubrí nuestro amplio catálogo de vinos, champagnes, espumantes y más.">
+    <meta name="keywords" content="Luby, Drinks, Vino, Cerveza, Bebidas, Espumantes, Champagnes, Catálogo, Promociones">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
+    <link rel="stylesheet" href="./../SCSS/style.css">
 
-    <link rel="stylesheet" href="./../style.css">
-    <title>Luby Drinks</title>
+    <title>Luby Drinks - 🍺 Cervezas 🍺</title>
 
 
 </head>
 
 <body>
     <!--inicio Header-->
-    <header class="header mx-auto">
-    
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="header-logo">
-                <a href="./../index.html" class="logo"><img src="./../Img/Luby.png" alt="logo luby drinks"></a>
-            </div>
-    
-            <div class="header-search">
-                <form class="d-flex" role="search">
-                    <input class="form-control" type="search" placeholder="Vinos, cervezas, Rosé,..." aria-label="Buscar">
-                    <a class="btn btn-search" type="submit" href=""><i class="fa-solid fa-magnifying-glass"
-                            style="color: #f5f5f5;"></i> Buscar</a>
-                </form>
-            </div>
-    
-            <div class="header-navbar">
-                <button class="navbar-toggler my-2" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa-solid fa-bars" style="color: #f5f5f5;"></i>
-                </button>
-    
-    
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-    
-                    <div class="header-navbar-search">
-                        <form class="d-flex" role="search">
-                            <input class="form-control" type="search" placeholder="Vinos, cervezas, Rosé,..."
-                                aria-label="Buscar">
-                            <a class="btn btn-search" type="submit" href=""><i class="fa-solid fa-magnifying-glass"
-                                    style="color: #f5f5f5;"></i> Buscar</a>
-                        </form>
+    <header class="header">
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="header-logo">
+                    <a href="./../index.html" class="logo"><img src="./../Img/Luby.png" alt="logo luby drinks"></a>
+                </div>
+
+                <div class="header-search">
+                    <form class="d-flex" role="search">
+                        <input class="form-control mx-2" type="search" placeholder="Vinos, cervezas..." aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"
+                                style="color: #f5f5f5;"></i> Buscar</button>
+                    </form>
+                </div>
+
+
+                <div class="header-navbar">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarScroll">
+                        <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                            <li class="nav-item px-2"><a href="./Nosotros.html">Nosotros</a></li>
+                            <li class="nav-item px-2"><a href="./Servicios.html">Servicios</a></li>
+                            <li class="nav-item px-2"><a href="./Vinos.html">Vinos</a></li>
+                            <li class="nav-item px-2"><a href="./Contacto.html">Contacto</a></li>
+                            <li class="nav-item px-2"><a href="./Cervezas.html">Cervezas</a></li>
+                            <li class="nav-item px-2"><a href="./Cart.html">Carrito</a></li>
+                            <li class="nav-item px-2"><a href="#top">Iniciar sesión</a></li>
+                        </ul>
                     </div>
-    
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item px-2"><a href="./Nosotros.html">Nosotros</a></li>
-                        <li class="nav-item px-2"><a href="./Servicios.html">Servicios</a></li>
-                        <li class="nav-item px-2"><a href="./Vinos.html">Vinos</a></li>
-                        <li class="nav-item px-2"><a href="./Contacto.html">Contacto</a></li>
-                        <li class="nav-item px-2"><a href="./Cervezas.html">Cervezas</a></li>
-                        <li class="nav-item px-2"><a href="./Cart.html">Carrito</a></li>
-                        <li class="nav-item px-2"><a href="#top">Iniciar sesión</a></li>
-    
-                    </ul>
                 </div>
             </div>
         </nav>
-    </header>           
+    </header>
     <!--Fin Header-->
 
-        <!---------------------------------------------------------------->
-    <main>
+    <!---------------------------------------------------------------->
+    
+    <main class="main">
 
-        <div class="principal-content">
-            <!--inicio seleccion filtro-->
-            <div class="selector-filtro">
-                <div class="txt-ofertas">
-                    <h2>Ofertas destacadas</h2>
-                </div>
-                <div class="opciones-destacadas">
-                    <ul class="lista-opciones">
-                        <li><a href="#">Más vendidos</a></li>
-                        <li><a href="#">Promociones</a></li>
-                        <li><a href="#">Lanzamientos</a></li>
-                    </ul>
-                </div>
+        <!--inicio seleccion filtro-->
+        <div class="selector-filtro">
+            <div class="txt-titulo">
+                <h2>Ofertas destacadas</h2>
             </div>
-
-            <!--Fin seleccion filtro-->
-
-
-            <!------------------------------------------------------------>
-            <br>
-
+    
+            <div class="txt-subtitulo1">
+                <a href="#">Más vendidos</a>
+            </div>
+            <div class="txt-subtitulo2">
+                <a href="#">Promociones</a>
+            </div>
+            <div class="txt-subtitulo3">
+                <a href="#">Lanzamientos</a>
+            </div>
+        </div>
+    
+        <!--Fin seleccion filtro-->
+    
+    
+        <!------------------------------------------------------------>
+        <div class="principal-content">
+    
             <!--inicio seccion cards-->
             <div class="grid-ofertas row-1">
-                <!--card oferta vinos-->
-                <!-----------------CARD 1--------------------------------->
-
-
-                <div class="item-card col- item-1">
-                    <a href="./../../Vinos.html">
-
-                        <div class="fondo-card">
-                            <img src="./../Img/Card-Fondo 1.png" alt="fondo paisaje viñedo">
-                        </div>
-
+                <!--card oferta cervezas-->
+                <!----------------------CARD 1------------------------------>
+                <div class="item-card-cerveza col- item-1">
+                    <a href="./Cervezas.html">
                         <div class="contenido-card">
-
-                            <div class="contenido-txt-card">
-                                <h2>Cullen<h2>
-                                        <p>Sauvignon Blanc - Semillon</p>
-                                        <div class="Contenido-txt-descripcion">
-                                            <p>Austrália </p>
-                                            <h2>$3500</h2>
-                                        </div>
-                            </div>
-
-                            <div class="contenido-img-card">
-                                <img src="./../Img/Botella-Vino-Blanco.png" alt="botella vino blanco">
-                            </div>
-
-                        </div>
-                    </a>
-                </div>
-                <!----------------------CARD 2----------------------------->
-
-
-                <div class="item-card col- item-2">
-                    <a href="./../../Vinos.html">
-
-                        <div class="fondo-card">
-                            <img src="./../Img/Card-Fondo 1.png" alt="fondo paisaje viñedo">
-                        </div>
-
-                        <div class="contenido-card">
-
-                            <div class="contenido-txt-card">
-                                <h2>Cá Bianca </h2>
-                                <p>Moscato - Blanco</p>
-                                <div class="Contenido-txt-descripcion">
-                                    <p>Itália </p>
-                                    <h2>$3500</h2>
-                                </div>
-
-                            </div>
-
-                            <div class="contenido-img-card">
-                                <img src="./../Img/Botella-Vino-Moscato.png" alt="botella vino Moscato">
-                            </div>
-
-                        </div>
-                    </a>
-                </div>
-                <!----------------------CARD 3------------------------->
-
-
-                <div class="item-card col- item-3">
-                    <a href="./../../Vinos.html">
-
-                        <div class="fondo-card">
-                            <img src="./../Img/Card-Fondo 1.png" alt="fondo paisaje viñedo">
-                        </div>
-
-                        <div class="contenido-card">
-
-                            <div class="contenido-txt-card">
-                                <h2>Puesto del Marques</h2>
-                                <p>Malbec - Tinto</p>
-                                <div class="Contenido-txt-descripcion">
-                                    <p>Argentina</p>
-                                    <h2>$3500</h2>
-                                </div>
-
-                            </div>
-
-                            <div class="contenido-img-card">
-                                <img src="./../Img/Botella-Vino-Tinto.png" alt="botella vino tinto">
-                            </div>
-
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-
-            <div class="grid-ofertas row-1">
-                <!--card oferta vinos-->
-                <!----------------------CARD 4------------------------------>
-                <div class="item-card col- item-4">
-                    <a href="./../../Vinos.html">
-
-                        <div class="fondo-card">
-                            <img src="./../Img/Card-Fondo 2.png" alt="fondo paisaje viñedo">
-                        </div>
-
-                        <div class="contenido-card">
-
                             <div class="contenido-txt-card">
                                 <h2>Blumenau</h2>
                                 <p>Cerveza</p>
-                                <div class="Contenido-txt-descripcion">
-                                    <p>Austrália</p>
-                                    <h2>$3500</h2>
-                                </div>
+                                <p>Austrália</p>
+                                <h2>$3500</h2>
                             </div>
-
+            
                             <div class="contenido-img-card">
                                 <img src="./../Img/Botella-Cerveza-Blumenau.png" alt="Botella-Cerveza-Blumenau">
                             </div>
-
                         </div>
                     </a>
                 </div>
-
-                <!----------------------CARD 5-------------------------->
-
-
-                <div class="item-card col- item-5">
-                    <a href="./../../Cervezas.html">
-
-                        <div class="fondo-card">
-                            <img src="./../Img/Card-Fondo 2.png" alt="fondo paisaje viñedo">
-                        </div>
-
+                <!----------------------CARD 2-------------------------->
+                <div class="item-card-cerveza col- item-2">
+                    <a href="./Cervezas.html">
                         <div class="contenido-card">
-
                             <div class="contenido-txt-card">
                                 <h2>Coruja</h2>
                                 <p>Cerveza</p>
-                                <div class="Contenido-txt-descripcion">
-                                    <p>Austrália</p>
-                                    <h2>$3500</h2>
-                                </div>
-
+                                <p>Austrália</p>
+                                <h2>$3500</h2>
                             </div>
-
                             <div class="contenido-img-card">
                                 <img src="./../Img/Botella-Cerveza-Coruja.png" alt="Botella-Cerveza-Coruja">
                             </div>
-
+            
+                        </div>
+                    </a>
+                </div>
+                <!----------------------CARD 3------------------------>
+                <div class="item-card-cerveza col- item-3">
+                    <a href="./Cervezas.html">
+                        <div class="contenido-card">
+                            <div class="contenido-txt-card">
+                                <h2>Paulaner</h2>
+                                <p>Cerveza</p>
+                                <p>Austrália</p>
+                                <h2>$3500</h2>
+                            </div>
+            
+                            <div class="contenido-img-card">
+                                <img src="./../Img/Botella-Cerveza-Paulaner.png" alt="Botella-Cerveza-Paulaner.png">
+                            </div>
+            
+                        </div>
+                    </a>
+                </div>
+                <!---------------------CARD 4------------------------------>
+                <div class="item-card-cerveza col- item-4">
+                    <a href="./Cervezas.html">
+                        <div class="contenido-card">
+                            <div class="contenido-txt-card">
+                                <h2>Blumenau</h2>
+                                <p>Cerveza</p>
+                                <p>Austrália</p>
+                                <h2>$3500</h2>
+                            </div>
+            
+                            <div class="contenido-img-card">
+                                <img src="./../Img/Botella-Cerveza-Blumenau.png" alt="Botella-Cerveza-Blumenau">
+                            </div>
+            
+                        </div>
+                    </a>
+                </div>
+                <!----------------------CARD 5-------------------------->
+                <div class="item-card-cerveza col- item-5">
+                    <a href="./Cervezas.html">
+                        <div class="contenido-card">
+                            <div class="contenido-txt-card">
+                                <h2>Coruja</h2>
+                                <p>Cerveza</p>
+                                <p>Austrália</p>
+                                <h2>$3500</h2>
+                            </div>
+            
+                            <div class="contenido-img-card">
+                                <img src="./../Img/Botella-Cerveza-Coruja.png" alt="Botella-Cerveza-Coruja">
+                            </div>
                         </div>
                     </a>
                 </div>
                 <!----------------------CARD 6------------------------>
-
-
-                <div class="item-card col- item-6">
-                    <a href="./../../cervezas.html">
-
-                        <div class="fondo-card">
-                            <img src="./../Img/Card-Fondo 2.png" alt="fondo paisaje viñedo">
-                        </div>
-
+                <div class="item-card-cerveza col- item-1">
+                    <a href="./Cervezas.html">
                         <div class="contenido-card">
-
                             <div class="contenido-txt-card">
                                 <h2>Paulaner</h2>
                                 <p>Cerveza</p>
-                                <div class="Contenido-txt-descripcion">
-                                    <p>Austrália</p>
-                                    <h2>$3500</h2>
-                                </div>
+                                <p>Austrália</p>
+                                <h2>$3500</h2>
                             </div>
-
                             <div class="contenido-img-card">
                                 <img src="./../Img/Botella-Cerveza-Paulaner.png" alt="Botella-Cerveza-Paulaner.png">
                             </div>
-
                         </div>
                     </a>
                 </div>
-
+            
             </div>
-
+            <div class="grid-ofertas row-2">
+                <!--card oferta cervezas-->
+                <!----------------------CARD 1------------------------------>
+                <div class="item-card-cerveza col- item-1">
+                    <a href="./Cervezas.html">
+                        <div class="contenido-card">
+                            <div class="contenido-txt-card">
+                                <h2>Blumenau</h2>
+                                <p>Cerveza</p>
+                                <p>Austrália</p>
+                                <h2>$3500</h2>
+                            </div>
+    
+                            <div class="contenido-img-card">
+                                <img src="./../Img/Botella-Cerveza-Blumenau.png" alt="Botella-Cerveza-Blumenau">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!----------------------CARD 2-------------------------->
+                <div class="item-card-cerveza col- item-2">
+                    <a href="./Cervezas.html">
+                        <div class="contenido-card">
+                            <div class="contenido-txt-card">
+                                <h2>Coruja</h2>
+                                <p>Cerveza</p>
+                                <p>Austrália</p>
+                                <h2>$3500</h2>
+                            </div>
+                            <div class="contenido-img-card">
+                                <img src="./../Img/Botella-Cerveza-Coruja.png" alt="Botella-Cerveza-Coruja">
+                            </div>
+    
+                        </div>
+                    </a>
+                </div>
+                <!----------------------CARD 3------------------------>
+                <div class="item-card-cerveza col- item-3">
+                    <a href="./Cervezas.html">
+                        <div class="contenido-card">
+                            <div class="contenido-txt-card">
+                                <h2>Paulaner</h2>
+                                <p>Cerveza</p>
+                                <p>Austrália</p>
+                                <h2>$3500</h2>
+                            </div>
+    
+                            <div class="contenido-img-card">
+                                <img src="./../Img/Botella-Cerveza-Paulaner.png" alt="Botella-Cerveza-Paulaner.png">
+                            </div>
+    
+                        </div>
+                    </a>
+                </div>
+                <!---------------------CARD 4------------------------------>
+                <div class="item-card-cerveza col- item-4">
+                    <a href="./Cervezas.html">
+                        <div class="contenido-card">
+                            <div class="contenido-txt-card">
+                                <h2>Blumenau</h2>
+                                <p>Cerveza</p>
+                                <p>Austrália</p>
+                                <h2>$3500</h2>
+                            </div>
+    
+                            <div class="contenido-img-card">
+                                <img src="./../Img/Botella-Cerveza-Blumenau.png" alt="Botella-Cerveza-Blumenau">
+                            </div>
+    
+                        </div>
+                    </a>
+                </div>
+                <!----------------------CARD 5-------------------------->
+                <div class="item-card-cerveza col- item-5">
+                    <a href="./Cervezas.html">
+                        <div class="contenido-card">
+                            <div class="contenido-txt-card">
+                                <h2>Coruja</h2>
+                                <p>Cerveza</p>
+                                <p>Austrália</p>
+                                <h2>$3500</h2>
+                            </div>
+    
+                            <div class="contenido-img-card">
+                                <img src="./../Img/Botella-Cerveza-Coruja.png" alt="Botella-Cerveza-Coruja">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!----------------------CARD 6------------------------>
+                <div class="item-card-cerveza col- item-1">
+                    <a href="./Cervezas.html">
+                        <div class="contenido-card">
+                            <div class="contenido-txt-card">
+                                <h2>Paulaner</h2>
+                                <p>Cerveza</p>
+                                <p>Austrália</p>
+                                <h2>$3500</h2>
+                            </div>
+                            <div class="contenido-img-card">
+                                <img src="./../Img/Botella-Cerveza-Paulaner.png" alt="Botella-Cerveza-Paulaner.png">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+    
+            </div>
+    
             <!--Fin seccion cards-->
-
+    
         </div>
-
     </main>
+    
+    <!---------------------------------------------------------------->
 
+<!--Inicio footer-->
 
+<footer class="footer text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-1">
+        <!-- Section: Social media -->
+        <section class="footer-media my-2">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                    class="fab fa-facebook-f"></i></a>
 
-    <!--Inicio footer-->
-    <footer class="footer page-footer">
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
 
-        <!-- Footer Links -->
-        <div class="container-fluid">
+            <!-- Google -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
 
-            <!-- Grid row -->
-            <div class="row">
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                    class="fab fa-instagram"></i></a>
 
-                <!-- Inicio Grid column 1  nav-vinos-->
-                <div class="col- mx-auto">
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                    class="fab fa-linkedin-in"></i></a>
 
-                    <!-- Content -->
-                    <nav class="nav-vinos">
-                        <ul>
-                            <h2>Vinos</h2>
-                            <li><a href="./../../Vinos.html">Todos los vinos</a></li>
-                            <li><a href="#top">Tintos</a></li>
-                            <li><a href="#top">Blancos</a></li>
-                            <li><a href="#top">Rosé</a></li>
-                            <li><a href="#top">Espumantes</a></li>
-                        </ul>
-                    </nav>
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+        </section>
+        <!-- Section: Social media -->
 
-                </div>
-                <!-- Fin Grid column 1-->
+        <!-- Section: Form -->
+        <section class="footer-form my-2">
 
-                <!-- Inicio Grid column 2 nav-cervezas -->
-                <div class="col- mx-auto">
-
-                    <!-- Links -->
-                    <nav class="nav-cervezas">
-                        <ul>
-                            <h2>Cervezas</h2>
-                            <li><a href="./../../Cervezas.html">Todas las cervezas</a></li>
-                        </ul>
-                    </nav>
-
-                </div>
-                <!-- Fin Grid column 2 -->
-
-                <!-- Inicio Grid column 3 nav-nosotros-->
-                <div class="col- mx-auto">
-
-                    <!-- Links -->
-                    <nav class="nav-nosotros">
-                        <ul>
-                            <h2>Nosotros</h2>
-                            <li><a href="./../../Nosotros.html">Sobre nosotros</a></li>
-                            <li><a href="./../../contacto.html">Contacto</a></li>
-                            <li><a href="./../../FAQ.html">Perguntas frecuentes</a></li>
-                            <li><a href="./../../work.html">Trabaja con nosotros</a></li>
-                            <li><a href="./../../mensajes.html">Mensajes</a></li>
-                        </ul>
-                    </nav>
-
-                </div>
-                <!-- Fin Grid column 3 -->
-
-                <!-- Inicio Grid column 4 nav-rrss -->
-                <div class="col- mx-auto">
-
-                    <!-- Links -->
-                    <nav class="nav-pago">
-                        <h2>Redes</h2>
-                        <li class="footer-logos rrss-logo">
-                            <i class="fa-brands fa-facebook"></i>
-                            <i class="fa-brands fa-twitter"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-tiktok"></i>
-                            <i class="fa-brands fa-youtube"></i>
-                        </li>
-                    </nav>
-
-                </div>
-                <!-- Fin Grid column 4 -->
-
-                <!-- Inicio Grid column 5 nav-pago -->
-                <div class="col- mx-auto">
-
-                    <nav class="nav-pago">
-                        <h2>Medios de pago</h2>
-                        <li class="footer-logos pago-logo">
-                            <i class="fa-brands fa-cc-visa"></i>
-                            <i class="fa-brands fa-cc-mastercard"></i>
-                            <i class="fa-brands fa-cc-paypal"></i>
-                        </li>
-                    </nav>
-
-                </div>
-                <!-- Fin Grid column 5 -->
-
-                <!-- Inicio Grid column 6  nav-correo-->
-                <div class="col- mx-auto">
-
-                    <!-- Links -->
-                    <nav class="nav-correo">
-                        <div class="nav-correo-txt">
-                            <h2>Únete a nuestra lista y recibe tips, noticias y promociones.</h2>
-                        </div>
-
-                        <div class="nav-correo-input">
-                            <input placeholder="Ingrese su email" class="input-mail" name="email" type="email">
-                            <button class="Subscribe">Subscribe</button>
-                        </div>
-
-
-
-                    </nav>
-
-                </div>
-                <!-- Fin Grid column 6 -->
-
+            <div class="footer-form-txt">
+                <h4>Únete a nuestra lista y recibe tips, noticias y promociones.</h4>
             </div>
-            <!-- Grid row -->
+            <!-- Email input -->
+            <div class="footer-form-input form-outline form-white">
+                <input type="email" id="form5Example2" class="form-control" placeholder="Ingresa tu e-mail">
+            </div>
+            <div class="footer-form-btn">
+                <!-- Submit button -->
+                <button type="submit" class="btn mb-0">Suscribirse</button>
+            </div>
+        </section>
+        <!-- Section: Form -->
 
-        </div>
-        <!-- Footer Links -->
+        <!-- Section: Links -->
+        <section class="footer-links my-2">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="footer-links-col col-lg-3 col-md-6">
+                    <h3 class="text-uppercase">vinos</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#!" class="text-white">Tintos</a></li>
+                        <li><a href="#!" class="text-white">Blancos</a></li>
+                        <li><a href="#!" class="text-white">Rose</a></li>
+                        <li><a href="#!" class="text-white">Espumantes</a></li>
+                    </ul>
+                </div>
+                <!--Grid column-->
 
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-1">
-            <p>© 2023 Copyright: <a href="./../index.html">lubydrinks.com.ar</a></p>
-        </div>
-        <!-- Copyright -->
+                <!--Grid column-->
+                <div class="footer-links-col col-lg-3 col-md-6">
+                    <h3 class="text-uppercase">Cervezas</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#!" class="text-white">Rubia</a></li>
+                        <li><a href="#!" class="text-white">Negra</a></li>
+                        <li><a href="#!" class="text-white">Roja</a></li>
+                        <li><a href="#!" class="text-white">IPA</a></li>
+                    </ul>
+                </div>
+                <!--Grid column-->
 
-    </footer>
-    <!-- Footer -->
+                <!--Grid column-->
+                <div class="footer-links-col col-lg-3 col-md-6">
+                    <h3 class="text-uppercase">Nosotros</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#!" class="text-white">Sobre nosotros</a></li>
+                        <li><a href="#!" class="text-white">Contacto</a>
+                        </li>
+                        <li><a href="#!" class="text-white">FAQs</a></li>
+                        <li><a href="#!" class="text-white">Mensajes</a></li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="footer-links-col col-lg-3 col-md-6">
+                    <h3 class="text-uppercase">medios de pago</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#!" class="text-white"><i class="fa-brands fa-cc-visa"></i></a></li>
+                        <li><a href="#!" class="text-white"><i class="fa-brands fa-cc-mastercard"></i></a></li>
+                        <li><a href="#!" class="text-white"><i class="fa-brands fa-cc-paypal"></i></a></li>
+                        <li><a href="#!" class="text-white">Mercado Pago</a></li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">© 2023 Copyright: <a class="text-white"
+            href="./index.html">luby.com</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- Footer -->
     <!---------------------------------------------------------------->
 
 </body>

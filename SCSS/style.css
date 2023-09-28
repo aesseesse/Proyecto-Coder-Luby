@@ -1,33 +1,138 @@
 /*Colors*/
 /*Font size*/
-/*PC*/
-/*no usada*/
-/*no usada*/
-/*no usada*/
-/*Laptop*/
+body {
+  font-size: 16px;
+}
+
 @media (max-width: 1024px) {
   body {
-    /*no usada*/
-    /*no usada*/
-    /*no usada*/
+    font-size: 14px;
   }
 }
-/*Tablet*/
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   body {
-    /*no usada*/
-    /*no usada*/
-    /*no usada*/
+    font-size: 12px;
   }
 }
-/*Cell*/
 @media (max-width: 425px) {
   body {
-    /*no usada*/
-    /*no usada*/
-    /*no usada*/
+    font-size: 12px;
   }
 }
+/*PC
+@media (max-width:1440px) {
+    $font-h2-header: 20px;
+    $font-h3-header: 18px;
+    $font-h4-header: 14px;
+    $font-p-header: 12px;
+    $font-a-header: 128px;
+
+    $font-h2-body: 30px;
+    $font-h3-body: 26px;
+    $font-h4-body: 22px;
+    $font-p-body: 14px;
+    $font-a-body: 18px;
+
+    $font-h2-banner: 32px;
+    $font-h3-banner: 40px;
+    $font-p-banner: 18px;
+    $font-a-banner: 24px;
+
+    $font-h2-card: 24px;
+    $font-h3-card: 16px;
+
+    $font-h4-card:14px;
+
+    $font-p-card: 14px;
+    $font-a-card: 12px;
+
+}*/
+/*Laptop
+@media (max-width:1024px) {
+    $font-h2-header: 14px;
+    $font-h3-header: 12px;
+    $font-h4-header: 10px;
+    $font-p-header: 10px;
+    $font-a-header: 12px;
+
+    $font-h2-body: 22px;
+    $font-h3-body: 18px;
+    $font-h4-body: 16px;
+    $font-p-body: 14px;
+    $font-a-body: 14px;
+
+    $font-h2-banner: 22px;
+    $font-h3-banner: 32px;
+    $font-p-banner: 12px;
+    $font-a-banner: 18px;
+
+    $font-h2-card: 18px;
+    $font-h3-card: 12px;
+    $font-h4-card: 12px;
+    $font-p-card: 12px;
+    $font-a-card: 12px;
+
+}
+
+
+Tablet
+@media (max-width:769px) {
+    $font-h2-header: 12px;
+    $font-h3-header: 10px;
+    $font-h4-header: 8px;
+    $font-p-header: 8px;
+    $font-a-header: 10px;
+
+    $font-h2-body: 18px;
+    $font-h3-body: 14px;
+    $font-h4-body: 12px;
+    $font-p-body: 10px;
+    $font-a-body: 10px;
+
+    $font-h2-banner: 18px;
+    $font-h3-banner: 28px;
+    $font-p-banner: 12px;
+    $font-a-banner: 14px;
+
+    $font-h2-card: 14px;
+    $font-h3-card: 10px;
+
+    $font-h4-card: 10px;
+
+    $font-p-card: 10px;
+    $font-a-card: 10px;
+
+}
+
+Cell
+@media (max-width:425px) {
+    $font-h2-header: 12px;
+    $font-h3-header: 10px;
+    $font-h4-header: 8px;
+    $font-p-header: 8px;
+    $font-a-header: 10px;
+
+    $font-h2-banner: 14px;
+    $font-h3-banner: 16px;
+    $font-p-banner: 10px;
+    $font-a-banner: 12px;
+
+    $font-h2-body: 12px;
+    $font-h3-body: 10px;
+    $font-h4-body: 10px;
+    $font-p-body: 10px;
+    $font-a-body: 10px;
+
+    $font-h2-card: 16px;
+    $font-h3-card: 10px;
+
+    $font-h4-card: 10px;
+
+    $font-p-card: 10px;
+    $font-a-card: 10px;
+
+}
+*/
 /*---------inicio Cart---------*/
 .master-container {
   margin: 2rem;
@@ -53,12 +158,12 @@
   align-items: center;
   padding-left: 20px;
   border-bottom: 1px solid #efeff3;
-  font-size: 16px;
+  font-size: 125%;
   font-weight: bold;
   color: #63656b;
 }
 .master-container .card .small {
-  font-size: 16px;
+  font-size: 125%;
   font-weight: bold;
   margin: auto;
 }
@@ -88,13 +193,13 @@
   height: auto;
 }
 .master-container .cart .products span {
-  font-size: 16px;
+  font-size: 125%;
   font-weight: bold;
   color: #47484b;
   display: block;
 }
 .master-container .cart .products p {
-  font-size: 14px;
+  font-size: 100%;
   color: #7a7c81;
 }
 .master-container .cart .quantity {
@@ -113,7 +218,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
+  font-size: 100%;
   font-weight: bold;
   color: #47484b;
 }
@@ -140,7 +245,7 @@
 }
 .master-container .coupons form .input_field {
   width: auto;
-  font-size: 14px !important;
+  font-size: 100% !important;
   padding: 0 0 0 12px;
   border-radius: 5px;
   outline: none;
@@ -148,8 +253,11 @@
   filter: drop-shadow(0px 1px 0px #efefef) drop-shadow(0px 1px 0.5px rgba(239, 239, 239, 0.5));
   transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
 }
+.master-container .coupons form .input_field ::-moz-placeholder {
+  font-size: 100%;
+}
 .master-container .coupons form .input_field ::placeholder {
-  font-size: 14px;
+  font-size: 100%;
 }
 .master-container .coupons form .input_field :focus {
   border: 1px solid transparent;
@@ -170,7 +278,7 @@
   border-radius: 5px;
   border: 0;
   font-style: normal;
-  font-size: 14px;
+  font-size: 100%;
   font-weight: bold;
   color: #ffffff;
 }
@@ -184,17 +292,17 @@
   gap: 5px;
 }
 .master-container .checkout .details span {
-  font-size: 14px;
+  font-size: 100%;
   font-weight: bold;
 }
 .master-container .checkout .details span :nth-child(odd) {
-  font-size: 14px;
+  font-size: 100%;
   font-weight: normal;
   color: #707175;
   margin: auto auto auto 0;
 }
 .master-container .checkout .details span :nth-child(even) {
-  font-size: 14px;
+  font-size: 100%;
   font-weight: bold;
   color: #47484b;
   margin: auto 0 auto auto;
@@ -209,11 +317,12 @@
 }
 .master-container .checkout .checkout--footer .price {
   position: relative;
-  font-size: 24px;
+  font-size: 150%;
   font-weight: bold;
   color: #2B2B2F;
 }
 .master-container .checkout .checkout--footer .price sub {
+  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   font-size: 11px;
@@ -234,7 +343,7 @@
   border: 0;
   outline: none;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 100%;
   font-weight: bold;
   transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
 }
@@ -272,7 +381,7 @@
   justify-content: center;
 }
 .contacto .form .form-contact h2 {
-  font-size: 30px;
+  font-size: 175%;
 }
 .contacto .form .form-contact-text {
   margin: 10px;
@@ -285,7 +394,7 @@
   border-radius: 8px;
   width: 100%;
   height: auto;
-  font-size: 26px;
+  font-size: 150%;
 }
 .contacto .form .form-message {
   width: 100%;
@@ -296,14 +405,14 @@
   width: 100%;
   padding: 8px 14px;
   border: 1px solid #B13251;
-  font-size: 26px;
+  font-size: 150%;
 }
 .contacto .form button {
   padding: 8px;
   outline: 0;
   border: 0;
   border-radius: 8px;
-  font-size: 30px;
+  font-size: 175%;
   font-weight: 500;
   background-color: #B13251;
   color: #f5f5f5;
@@ -312,174 +421,237 @@
 }
 
 /*--------- Fin Contacto---------*/
-/* inicio contenedor cards*/
-.grid-ofertas {
+/*------------- inicio contenedor grid---------------------*/
+.principal-content .grid-ofertas {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-/* fin contenedor cards*/
+/*------------- Fin contenedor grid---------------------*/
 /*Inicio footer*/
 .footer {
   width: 100%;
   background-color: #B13251;
 }
+.footer h3 {
+  font-size: 125%;
+  font-weight: bold;
+}
+.footer h4 {
+  font-size: 115%;
+  font-weight: normal;
+}
+.footer .container .footer-form {
+  display: grid;
+  grid-template: "f-txt f-input f-btn" 1fr;
+  justify-self: center;
+  align-self: center;
+}
+.footer .container .footer-form a {
+  text-decoration: none;
+  font-size: 100%;
+}
+.footer .container .footer-form .footer-form-txt {
+  grid-area: f-txt;
+  justify-items: center;
+}
+.footer .container .footer-form .footer-form-input {
+  grid-area: f-input;
+}
+.footer .container .footer-form .footer-form-input .form-control {
+  font-size: 100% !important;
+  width: 40vw;
+  margin: auto;
+}
+.footer .container .footer-form .footer-form-btn {
+  grid-area: f-btn;
+}
+.footer .container .footer-form .footer-form-btn .btn {
+  font-size: 100% !important;
+  color: white;
+  margin: auto;
+  border-color: white;
+}
+.footer .container .footer-links a {
+  text-decoration: none;
+  font-size: 100%;
+}
 
+@media (max-width: 769px) {
+  .footer .container .footer-form {
+    grid-template: "f-txt f-txt" 1fr "f-input f-btn" 1fr;
+  }
+  .footer .container .footer-form .footer-form-input .form-control {
+    width: 60vw;
+  }
+}
 /*Fin footer*/
 /*------------- Inicio header---------------------*/
 .header {
   /*fondo*/
   background-color: #B13251 !important;
+}
+.header .container-fluid {
   display: grid;
   width: 100vw;
-  grid-area: 
-  "hlogo hmenu" 1fr
-  "hsearch hsearch" 1fr;
-
+  grid-template: "hlogo hsearch hmenu" 1fr "hlogo hsearch hmenu" 1fr;
   /*logo*/
   /*search*/
   /*Menu*/
 }
-@media (max-width: 425px) {
-  .header {
-    grid-area: 
-    "hlogo hmenu" 1fr 
-    "hsearch hsearch hsearch" 1fr;
-  }
-  .header-logo img {
-    height: 1rem;
-  }
-}
-
-
-
-.header .header-logo {
+.header .container-fluid .header-logo {
   grid-area: hlogo;
 }
-.header .header-logo img {
+.header .container-fluid .header-logo img {
   height: 3rem;
-  object-fit: scale-down;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
 }
-.header .header-search {
+.header .container-fluid .header-search {
   grid-area: hsearch;
   font-weight: lighter;
   margin: auto;
 }
-.header .header-search .form-control {
-  font-size: 12px !important;
-  width: 30vw;
-  height: 2rem;
+.header .container-fluid .header-search .form-control {
+  font-size: 100% !important;
+  width: 35vw;
   margin: auto;
 }
-.header .header-search a {
-  font-size: 18px !important;
+.header .container-fluid .header-search .btn {
+  font-size: 100% !important;
   color: white;
   margin: auto;
+  border-color: white;
 }
-.header .header-navbar {
+.header .container-fluid .header-navbar {
   grid-area: hmenu;
+  justify-self: right;
 }
-.header .header-navbar .navbar-toggler {
+.header .container-fluid .header-navbar .navbar-toggler {
   border: none;
+  color: white !important;
 }
-.header .header-navbar a {
+.header .container-fluid .header-navbar a {
   /*lista navbar*/
-  font-size: 18px !important;
+  font-size: 100% !important;
   color: white;
+  text-decoration: none;
   margin: 0 auto;
-  font-weight: lighter;
 }
 
-
+@media (max-width: 426px) {
+  .header .container-fluid {
+    display: grid;
+    grid-template: "hlogo hlogo hmenu" 1fr "hsearch hsearch hsearch" 1fr;
+  }
+  .header .container-fluid .header-logo img {
+    height: 2rem;
+  }
+  .header .container-fluid .header-search {
+    margin: 5px;
+  }
+  .header .container-fluid .header-search .form-control {
+    width: 50vw;
+  }
+}
 /*------------- fin header---------------------*/
-/*Inicio Cards*/
+/*------------- inicio card cerveza---------------------*/
 .item-card-cerveza {
-  /*card cerveza*/
-  margin: 3% 2%;
-  background-image: url(./Img/Card-Fondo\ 2.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 300px;
-  height: 200px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  /*contenido dentro de la card botella + texto*/
-}
-.item-card-cerveza .contenido-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /*imagen derecha*/
-  /*text*/
-}
-.item-card-cerveza .contenido-card img {
-  width: 60px;
-}
-.item-card-cerveza .contenido-card .contenido-txt-card {
-  height: fit-content;
-  width: 220px;
-  padding: 5%;
-  text-align: center;
-  background-color: var(--color-shadow-white);
-  border-radius: 5%;
-}
-.item-card-cerveza .contenido-card .contenido-txt-card h2 {
-  color: var(--color-font-header);
-  font-family: "Mulish";
-  font-size: var(--font-h2-card);
-}
-.item-card-cerveza .contenido-card .contenido-txt-card p {
-  color: var(--color-font-header);
-  font-family: "Mulish";
-  font-size: var(--font-p-card);
-}
-
-/*Inicio Cards*/
-.item-card-vino {
   /*card*/
   margin: 15px 2%;
-  background-image: url(./Img/Card-Fondo\ 1.png);
-  background-repeat: no-repeat;
+  background-image: url(./../../../Img/Card-Fondo\ 2.png);
+  background-repeat: round;
   background-size: contain;
   width: 400px;
   height: 300px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  border-radius: 5%;
   /*contenido dentro de la card botella + texto*/
+}
+.item-card-cerveza:hover {
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
+}
+.item-card-cerveza h2 {
+  color: white;
+  font-size: 150%;
+}
+.item-card-cerveza p {
+  color: white;
+  font-size: 100%;
+}
+.item-card-cerveza .contenido-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*text*/
+  /*imagen derecha*/
+}
+.item-card-cerveza .contenido-card .contenido-txt-card {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 220px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5%;
+  margin: 30px;
+  padding: 5px;
+}
+.item-card-cerveza .contenido-card .contenido-img-card img {
+  width: 60px;
+}
+
+/*------------- Fin card cerveza---------------------*/
+/*------------- inicio card vino---------------------*/
+.item-card-vino {
+  /*card*/
+  margin: 15px 2%;
+  background-image: url(./../../../Img/Card-Fondo\ 1.png);
+  background-repeat: round;
+  background-size: contain;
+  width: 400px;
+  height: 300px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5%;
+  /*contenido dentro de la card botella + texto*/
+}
+.item-card-vino:hover {
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
+}
+.item-card-vino h2 {
+  color: white;
+  font-size: 150%;
+}
+.item-card-vino p {
+  color: white;
+  font-size: 100%;
 }
 .item-card-vino .contenido-card {
   display: flex;
   justify-content: center;
   align-items: center;
-  /*imagen derecha*/
   /*text*/
-}
-.item-card-vino .contenido-card img {
-  width: 60px;
+  /*imagen derecha*/
 }
 .item-card-vino .contenido-card .contenido-txt-card {
+  height: -moz-fit-content;
   height: fit-content;
   width: 220px;
-  padding: 5%;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 5%;
+  margin: 30px;
+  padding: 5px;
 }
-.item-card-vino .contenido-card .contenido-txt-card h2 {
-  color: white;
-  font-family: "Mulish";
-  font-size: 24px;
-}
-.item-card-vino .contenido-card .contenido-txt-card p {
-  color: white;
-  font-family: "Mulish";
-  font-size: 14px;
+.item-card-vino .contenido-card .contenido-img-card img {
+  width: 60px;
 }
 
-/*Fin Cards en home*/
+/*------------- fin card vino---------------------*/
 /*Inicio Carousel*/
 .carousel {
   /*contenedor slide carousel*/
@@ -488,132 +660,127 @@
   /*inicio controles*/
   /*fin controles*/
   /*inicio inner*/
-  /*texto de carousel*/
 }
-.carousel .carousel-indicators {
+.carousel h2 {
+  font-size: 130%;
+  font-weight: normal;
+  margin: 1%;
+}
+.carousel h3 {
+  color: white;
+  font-size: 175% !important;
+  font-weight: bolder;
+  background-color: #B13251;
+  margin: 1%;
+}
+.carousel p {
+  font-size: 100% !important;
+  line-height: normal;
+  margin: 0%;
+}
+.carousel a {
+  font-size: 125% !important;
+  color: white;
+  font-weight: normal;
+}
+.carousel .Controls .carousel-indicators {
   position: absolute;
   top: 90%;
 }
-.carousel .carousel-control-prev {
+.carousel .Controls .carousel-control-prev {
   /*control prev*/
   left: -1%;
   z-index: 1;
   position: absolute;
 }
-.carousel .carousel-control-next {
+.carousel .Controls .carousel-control-next {
   /*control next*/
   right: -1%;
   z-index: 1;
   position: absolute;
 }
-.carousel .carousel-inner img {
+.carousel .carousel-inner .carousel-item {
   /*imagen*/
+}
+.carousel .carousel-inner .carousel-item img {
   width: 100%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
-@media (max-width: 425px) {
-  .carousel .carousel-inner img {
-    height: 30vh;
-  }
-}
-.carousel .carousel-content {
+.carousel .carousel-inner .carousel-item .carousel-content {
   position: absolute;
   top: 25%;
   left: 10%;
+  /*texto de carousel*/
 }
-.carousel .carousel-txt {
+.carousel .carousel-inner .carousel-item .carousel-content .carousel-txt {
   position: relative;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.3);
   border-radius: 5%;
   text-align: center;
+  width: -moz-fit-content;
   width: fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   padding: 2%;
   color: white;
   margin: 1%;
 }
-.carousel .carousel-txt h2 {
-  font-size: 32px !important;
-  font-weight: bold;
-  margin: 1%;
-}
-.carousel .carousel-txt h3 {
-  color: white;
-  font-size: 40px !important;
-  font-weight: bolder;
-  background-color: #B13251;
-  margin: 1%;
-}
-.carousel .carousel-txt p {
-  font-size: 18px !important;
-  line-height: normal;
-  margin: 0%;
-}
-.carousel .carousel-txt .btn {
+.carousel .carousel-inner .carousel-item .carousel-content .carousel-txt .btn {
   border: none;
-  font-size: 24px !important;
-  color: white;
-  font-weight: bolder;
   background-color: #B13251;
-  line-height: normal;
   margin: 0%;
 }
-@media (max-width: 425px) {
-  .carousel .carousel-content {
+
+/*fin Carousel*/
+@media (max-width: 426px) {
+  .carousel .carousel-inner .carousel-item img {
+    height: 30vh;
+  }
+  .carousel .carousel-inner .carousel-item .carousel-content {
     width: 60%;
     left: 10%;
     top: 10%;
   }
 }
-
-/*fin Carousel*/
 /*Inicio ofertas destacadas*/
 .selector-filtro {
   /*contenedor filtro*/
-  display: block;
+  display: grid;
+  grid-template: "txt-title txt-title txt-title" 1fr "txt-subtitle1 txt-subtitle2 txt-subtitle3" 1fr;
   margin: auto;
   align-items: center;
   text-align: center;
   width: 100%;
   padding: 10px;
-}
-.selector-filtro .txt-ofertas {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-.selector-filtro .lista-opciones ul li {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-}
-.selector-filtro .lista-opciones h2 {
-  width: auto;
-  font-size: 30px;
-  /*12px*/
-  font-weight: bold;
   color: rgb(38, 38, 38);
-  font-family: "mulish";
 }
-.selector-filtro .lista-opciones a {
-  color: rgb(38, 38, 38);
-  font-family: "mulish";
-  font-size: 18px;
-  /*10 px*/
-  margin: 0px 10px;
-}
-.selector-filtro .lista-opciones a:hover {
-  color: #B13251;
-  font-family: "mulish";
-  font-size: 18px;
-  /*12px*/
+.selector-filtro h2 {
   font-weight: bold;
 }
+.selector-filtro a {
+  font-size: 100%;
+  text-decoration: none;
+  color: rgb(38, 38, 38);
+}
+.selector-filtro a:hover {
+  font-weight: bold;
+  font-size: 120%;
+}
+.selector-filtro .txt-titulo {
+  grid-area: txt-title;
+}
+.selector-filtro .txt-subtitulo1 {
+  grid-area: txt-subtitle1;
+}
+.selector-filtro .txt-subtitulo1 {
+  grid-area: txt-subtitle1;
+}
+.selector-filtro .txt-subtitulo1 {
+  grid-area: txt-subtitle1;
+}
 
-/*Fin ofertas destacadas*/
-
-/*# sourceMappingURL=style.css.map */
+/*Fin ofertas destacadas*//*# sourceMappingURL=style.css.map */

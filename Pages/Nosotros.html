@@ -4,211 +4,242 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Comprar vinos por Internet ahora es más facil. En Luby Drinks podes encontrar, comparar, y comprar los mejores vinos, cervezas y bebidas online. Entra y descubrí nuestro amplio catálogo de vinos, champagnes, espumantes y más.">
+    <meta name="keywords" content="Luby, Drinks, Vino, Cerveza, Bebidas, Espumantes, Champagnes, Catálogo, Promociones">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-        
-    <link rel="stylesheet" href="./../style.css">
-    <title>Luby Drinks</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="./../SCSS/style.css">
+
+    <title>Luby Drinks - Nosotros</title>
 
 
 </head>
 
 <body>
     <!--inicio Header-->
-    <header class="header mx-auto">
-    
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="header-logo">
-                <a href="./../index.html" class="logo"><img src="./../Img/Luby.png" alt="logo luby drinks"></a>
-            </div>
-    
-            <div class="header-search">
-                <form class="d-flex" role="search">
-                    <input class="form-control" type="search" placeholder="Vinos, cervezas, Rosé,..." aria-label="Buscar">
-                    <a class="btn btn-search" type="submit" href=""><i class="fa-solid fa-magnifying-glass"
-                            style="color: #f5f5f5;"></i> Buscar</a>
-                </form>
-            </div>
-    
-            <div class="header-navbar">
-                <button class="navbar-toggler my-2" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa-solid fa-bars" style="color: #f5f5f5;"></i>
-                </button>
-    
-    
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-    
-                    <div class="header-navbar-search">
-                        <form class="d-flex" role="search">
-                            <input class="form-control" type="search" placeholder="Vinos, cervezas, Rosé,..."
-                                aria-label="Buscar">
-                            <a class="btn btn-search" type="submit" href=""><i class="fa-solid fa-magnifying-glass"
-                                    style="color: #f5f5f5;"></i> Buscar</a>
-                        </form>
+    <header class="header">
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="header-logo">
+                    <a href="./../index.html" class="logo"><img src="./../Img/Luby.png" alt="logo luby drinks"></a>
+                </div>
+
+                <div class="header-search">
+                    <form class="d-flex" role="search">
+                        <input class="form-control mx-2" type="search" placeholder="Vinos, cervezas..." aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"
+                                style="color: #f5f5f5;"></i> Buscar</button>
+                    </form>
+                </div>
+
+
+                <div class="header-navbar">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarScroll">
+                        <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                            <li class="nav-item px-2"><a href="./Nosotros.html">Nosotros</a></li>
+                            <li class="nav-item px-2"><a href="./Servicios.html">Servicios</a></li>
+                            <li class="nav-item px-2"><a href="./Vinos.html">Vinos</a></li>
+                            <li class="nav-item px-2"><a href="./Contacto.html">Contacto</a></li>
+                            <li class="nav-item px-2"><a href="./Cervezas.html">Cervezas</a></li>
+                            <li class="nav-item px-2"><a href="./Cart.html">Carrito</a></li>
+                            <li class="nav-item px-2"><a href="#top">Iniciar sesión</a></li>
+                        </ul>
                     </div>
-    
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item px-2"><a href="./Nosotros.html">Nosotros</a></li>
-                        <li class="nav-item px-2"><a href="./Servicios.html">Servicios</a></li>
-                        <li class="nav-item px-2"><a href="./Vinos.html">Vinos</a></li>
-                        <li class="nav-item px-2"><a href="./Contacto.html">Contacto</a></li>
-                        <li class="nav-item px-2"><a href="./Cervezas.html">Cervezas</a></li>
-                        <li class="nav-item px-2"><a href="./Cart.html">Carrito</a></li>
-                        <li class="nav-item px-2"><a href="#top">Iniciar sesión</a></li>
-    
-                    </ul>
                 </div>
             </div>
         </nav>
     </header>
     <!--Fin Header-->
-
     <!---------------------------------------------------------------->
 
     <!--Inicio Contenido-->
-    <content class="content">
-        
-    
+    <main>
+        <div class="servicios-nav navbar-collapse">
+            <nav class="nav justify-content-center">
+                <a class="nav-link" href="#Historia">Historia</a>
+                <a class="nav-link" href="#Contacto">Contacto</a>
+                <a class="nav-link" href="#Maps">Ubicacion Mapa</a>
 
-    </content>
+            </nav>
+        </div>
+    
+    
+        <div class="row">
+            <div class="col-sm-12" id="Historia">
+                <div class="card m-1">
+                    <div class="card-body">
+                        <h5 class="card-title">Historia</h5>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit eum consectetur
+                            asperiores accusamus quibusdam delectus a eveniet explicabo veritatis fugiat corporis autem
+                            repellendus sit tempora, quam officiis accusantium, sequi cupiditate?</p>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit eum consectetur
+                            asperiores accusamus quibusdam delectus a eveniet explicabo veritatis fugiat corporis autem
+                            repellendus sit tempora, quam officiis accusantium, sequi cupiditate?</p>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit eum consectetur
+                            asperiores accusamus quibusdam delectus a eveniet explicabo veritatis fugiat corporis autem
+                            repellendus sit tempora, quam officiis accusantium, sequi cupiditate?</p>
+                        <a href="#" class="btn btn-primary">contactanos</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6" id="Contacto">
+                <div class="card my-auto">
+                    <div class="card-body">
+                        <h5 class="card-title">Contacto</h5>
+                        <p class="card-text"><i class="fa-solid fa-location-dot"></i> Lorem Ipsum is simply dummy</p>
+                        <p class="card-text"><i class="fa-solid fa-phone"></i> (+54) 911 1234-1234</p>
+                        <p class="card-text"><i class="fa-regular fa-envelope"></i> info@lubydrinks.com.ar</p>
+                        <p class="card-text">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                        </p>
+                        <a href="#" class="btn btn-primary">contactanos</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6" id="Maps">
+                <div class="card m-auto">
+                    <div class="card-body">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d13140.726811136423!2d-58.47442965!3d-34.57426865000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1siframe%20google%20map%20html%20example!5e0!3m2!1ses-419!2sar!4v1695937013714!5m2!1ses-419!2sar"
+                            width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
     <!--Fin Contenido-->
 
     <!--Inicio footer-->
-    <footer class="footer page-footer">
 
-        <!-- Footer Links -->
-        <div class="container-fluid">
+    <footer class="footer text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-1">
+            <!-- Section: Social media -->
+            <section class="footer-media my-2">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
 
-            <!-- Grid row -->
-            <div class="row">
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
 
-                <!-- Inicio Grid column 1  nav-vinos-->
-                <div class="col- mx-auto">
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
 
-                    <!-- Content -->
-                    <nav class="nav-vinos">
-                        <ul>
-                            <h2>Vinos</h2>
-                            <li><a href="./../Pages/Vinos.html">Todos los vinos</a></li>
-                            <li><a href="#top">Tintos</a></li>
-                            <li><a href="#top">Blancos</a></li>
-                            <li><a href="#top">Rosé</a></li>
-                            <li><a href="#top">Espumantes</a></li>
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-linkedin-in"></i></a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Form -->
+            <section class="footer-form my-2">
+
+                <div class="footer-form-txt">
+                    <h4>Únete a nuestra lista y recibe tips, noticias y promociones.</h4>
+                </div>
+                <!-- Email input -->
+                <div class="footer-form-input form-outline form-white">
+                    <input type="email" id="form5Example2" class="form-control" placeholder="Ingresa tu e-mail">
+                </div>
+                <div class="footer-form-btn">
+                    <!-- Submit button -->
+                    <button type="submit" class="btn mb-0">Suscribirse</button>
+                </div>
+            </section>
+            <!-- Section: Form -->
+
+            <!-- Section: Links -->
+            <section class="footer-links my-2">
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="footer-links-col col-lg-3 col-md-6">
+                        <h3 class="text-uppercase">vinos</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="#!" class="text-white">Tintos</a></li>
+                            <li><a href="#!" class="text-white">Blancos</a></li>
+                            <li><a href="#!" class="text-white">Rose</a></li>
+                            <li><a href="#!" class="text-white">Espumantes</a></li>
                         </ul>
-                    </nav>
+                    </div>
+                    <!--Grid column-->
 
-                </div>
-                <!-- Fin Grid column 1-->
-
-                <!-- Inicio Grid column 2 nav-cervezas -->
-                <div class="col- mx-auto">
-
-                    <!-- Links -->
-                    <nav class="nav-cervezas">
-                        <ul>
-                            <h2>Cervezas</h2>
-                            <li><a href="./..pages/Cervezas.html">Todas las cervezas</a></li>
+                    <!--Grid column-->
+                    <div class="footer-links-col col-lg-3 col-md-6">
+                        <h3 class="text-uppercase">Cervezas</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="#!" class="text-white">Rubia</a></li>
+                            <li><a href="#!" class="text-white">Negra</a></li>
+                            <li><a href="#!" class="text-white">Roja</a></li>
+                            <li><a href="#!" class="text-white">IPA</a></li>
                         </ul>
-                    </nav>
+                    </div>
+                    <!--Grid column-->
 
-                </div>
-                <!-- Fin Grid column 2 -->
-
-                <!-- Inicio Grid column 3 nav-nosotros-->
-                <div class="col- mx-auto">
-
-                    <!-- Links -->
-                    <nav class="nav-nosotros">
-                        <ul>
-                            <h2>Nosotros</h2>
-                            <li><a href="./../Pages/Nosotros.html">Sobre nosotros</a></li>
-                            <li><a href="./../Pages/contacto.html">Contacto</a></li>
-                            <li><a href="./../Pages/FAQ.html">Perguntas frecuentes</a></li>
-                            <li><a href="./../Pages/work.html">Trabaja con nosotros</a></li>
-                            <li><a href="./../Pages/mensajes.html">Mensajes</a></li>
+                    <!--Grid column-->
+                    <div class="footer-links-col col-lg-3 col-md-6">
+                        <h3 class="text-uppercase">Nosotros</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="#!" class="text-white">Sobre nosotros</a></li>
+                            <li><a href="#!" class="text-white">Contacto</a>
+                            </li>
+                            <li><a href="#!" class="text-white">FAQs</a></li>
+                            <li><a href="#!" class="text-white">Mensajes</a></li>
                         </ul>
-                    </nav>
+                    </div>
+                    <!--Grid column-->
 
+                    <!--Grid column-->
+                    <div class="footer-links-col col-lg-3 col-md-6">
+                        <h3 class="text-uppercase">medios de pago</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="#!" class="text-white"><i class="fa-brands fa-cc-visa"></i></a></li>
+                            <li><a href="#!" class="text-white"><i class="fa-brands fa-cc-mastercard"></i></a></li>
+                            <li><a href="#!" class="text-white"><i class="fa-brands fa-cc-paypal"></i></a></li>
+                            <li><a href="#!" class="text-white">Mercado Pago</a></li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
                 </div>
-                <!-- Fin Grid column 3 -->
-
-                <!-- Inicio Grid column 4 nav-rrss -->
-                <div class="col- mx-auto">
-
-                    <!-- Links -->
-                    <nav class="nav-pago">
-                        <h2>Redes</h2>
-                        <li class="footer-logos rrss-logo">
-                            <i class="fa-brands fa-facebook"></i>
-                            <i class="fa-brands fa-twitter"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-tiktok"></i>
-                            <i class="fa-brands fa-youtube"></i>
-                        </li>
-                    </nav>
-
-                </div>
-                <!-- Fin Grid column 4 -->
-
-                <!-- Inicio Grid column 5 nav-pago -->
-                <div class="col- mx-auto">
-
-                    <nav class="nav-pago">
-                        <h2>Medios de pago</h2>
-                        <li class="footer-logos pago-logo">
-                            <i class="fa-brands fa-cc-visa"></i>
-                            <i class="fa-brands fa-cc-mastercard"></i>
-                            <i class="fa-brands fa-cc-paypal"></i>
-                        </li>
-                    </nav>
-
-                </div>
-                <!-- Fin Grid column 5 -->
-
-                <!-- Inicio Grid column 6  nav-correo-->
-                <div class="col- mx-auto">
-
-                    <!-- Links -->
-                    <nav class="nav-correo">
-                        <div class="nav-correo-txt">
-                            <h2>Únete a nuestra lista y recibe tips, noticias y promociones.</h2>
-                        </div>
-
-                        <div class="nav-correo-input">
-                            <input placeholder="Ingrese su email" class="input-mail" name="email" type="email">
-                            <button class="Subscribe">Subscribe</button>
-                        </div>
-
-
-
-                    </nav>
-
-                </div>
-                <!-- Fin Grid column 6 -->
-
-            </div>
-            <!-- Grid row -->
-
+                <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
         </div>
-        <!-- Footer Links -->
+        <!-- Grid container -->
 
         <!-- Copyright -->
-        <div class="footer-copyright text-center py-1">
-            <p>© 2023 Copyright: <a href="./../index.html">lubydrinks.com.ar</a></p>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">© 2023 Copyright: <a class="text-white"
+                href="./index.html">luby.com</a>
         </div>
         <!-- Copyright -->
-
     </footer>
     <!-- Footer -->
-    <!---------------------------------------------------------------->
-
     
 </body>
 
