@@ -56,17 +56,17 @@
         .carousel-txt {
             position: relative;
             align-items: center;
-            background-color: var(--color-shadow-white);
+            background-color: $color-shadow-white;
             border-radius: 5%;
             text-align: center;
             width: fit-content;
             height: fit-content;
             padding: 2%;
-            color: var(--color-font-header);
+            color: $color-font-header;
             margin: 1%;
 
                 h2 {
-                    font-size: var(--font-h2-banner) !important
+                    font-size: $font-h2-banner !important
                         /*8px*/
                     ;
                     font-weight: bold;
@@ -74,17 +74,17 @@
                 }
             
                 h3 {
-                    color: var(--color-font-header);
-                    font-size: var(--font-h3-banner) !important
+                    color: $color-font-header;
+                    font-size: $font-h3-banner !important
                         /*10px*/
                     ;
                     font-weight: bolder;
-                    background-color: var(--color-principal);
+                    background-color: $color-principal;
                     margin: 1%;
                 }
             
                 p {
-                    font-size: var(--font-p-banner) !important
+                    font-size: $font-p-banner !important
                         /* 6px*/
                     ;
                     line-height: normal;
@@ -92,10 +92,10 @@
                 }
                 .btn {
                     border: none;
-                    font-size: var(--font-a-banner) !important;
-                    color: var(--color-font-header);
+                    font-size: $font-a-banner !important;
+                    color: $color-font-header;
                     font-weight: bolder;
-                    background-color: var(--color-principal);
+                    background-color: $color-principal;
                     line-height: normal;
                     margin: 0%;
                 }

@@ -1,32 +1,31 @@
 /*Font size*/
 /*PC*/
-:root {
---font-h2-header: 20px;
---font-h3-header: 18px;
---font-h4-header: 14px;
---font-p-header: 12px;
---font-a-header: 18px;
+$font-h2-header: 20px;
+$font-h3-header: 18px;
+$font-h4-header: 14px;
+$font-p-header: 12px;
+$font-a-header: 18px;
 
---font-h2-body: 30px;
---font-h3-body: 26px;
---font-h4-body: 22px;
---font-p-body: 14px;
---font-a-body: 18px;
+$font-h2-body: 30px;
+$font-h3-body: 26px;
+$font-h4-body: 22px;
+$font-p-body: 14px;
+$font-a-body: 18px;
 
---font-h2-banner: 32px;
---font-h3-banner: 40px;
---font-p-banner: 18px;
---font-a-banner: 24px;
+$font-h2-banner: 32px;
+$font-h3-banner: 40px;
+$font-p-banner: 18px;
+$font-a-banner: 24px;
 
---font-h2-card: 24px;
---font-h3-card: 16px;
+$font-h2-card: 24px;
+$font-h3-card: 16px;
 /*no usada*/
---font-h4-card:14px;
+$font-h4-card:14px;
 /*no usada*/
---font-p-card: 14px;
---font-a-card: 12px;
+$font-p-card: 14px;
+$font-a-card: 12px;
 /*no usada*/
-}
+
 
 /*Laptop*/
 @media (max-width:1024px) {
