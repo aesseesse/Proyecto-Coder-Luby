@@ -1,0 +1,116 @@
+/*Inicio Carousel*/
+.carousel {
+    /*contenedor slide carousel*/
+    position: relative;
+    width: 100%;
+
+    /*inicio controles*/
+        .carousel-indicators {
+            position: absolute;
+            top: 90%;
+        }
+    
+        .carousel-control-prev {
+            /*control prev*/
+            left: -1%;
+            z-index: 1;
+            position: absolute;
+        }
+    
+        .carousel-control-next {
+            /*control next*/
+            right: -1%;
+            z-index: 1;
+            position: absolute;
+        }
+    
+    /*fin controles*/
+
+        /*inicio inner*/
+    
+        .carousel-inner img {
+            /*imagen*/
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    
+        @media (max-width:425px) {
+            .carousel-inner img{
+                height: 30vh;
+            }
+    
+        }
+    
+    
+        /*texto de carousel*/
+    
+    
+        .carousel-content {
+            position: absolute;
+            top: 25%;
+            left: 10%;
+    
+        }
+    
+        .carousel-txt {
+            position: relative;
+            align-items: center;
+            background-color: var(--color-shadow-white);
+            border-radius: 5%;
+            text-align: center;
+            width: fit-content;
+            height: fit-content;
+            padding: 2%;
+            color: var(--color-font-header);
+            margin: 1%;
+
+                h2 {
+                    font-size: var(--font-h2-banner) !important
+                        /*8px*/
+                    ;
+                    font-weight: bold;
+                    margin: 1%;
+                }
+            
+                h3 {
+                    color: var(--color-font-header);
+                    font-size: var(--font-h3-banner) !important
+                        /*10px*/
+                    ;
+                    font-weight: bolder;
+                    background-color: var(--color-principal);
+                    margin: 1%;
+                }
+            
+                p {
+                    font-size: var(--font-p-banner) !important
+                        /* 6px*/
+                    ;
+                    line-height: normal;
+                    margin: 0%;
+                }
+                .btn {
+                    border: none;
+                    font-size: var(--font-a-banner) !important;
+                    color: var(--color-font-header);
+                    font-weight: bolder;
+                    background-color: var(--color-principal);
+                    line-height: normal;
+                    margin: 0%;
+                }
+        }
+    
+    @media (max-width:425px) {
+        .carousel-content {
+            width: 60%;
+            left: 10%;
+            top: 10%
+        }
+    }
+}
+/*fin Carousel*/
+
+
+
+

@@ -1,0 +1,69 @@
+/*------------- Inicio header---------------------*/
+
+
+header {
+    /*fondo*/
+    background-color: var(--color-background-nav) !important;
+    display: grid;
+    width: 100vw;
+    grid-area:
+        "hlogo hsearch hmenu" 1fr
+        "hlogo hsearch hmenu" 1fr;
+
+
+    /*logo*/
+    .header-logo {
+        grid-area: hlogo;
+        .header-logo img {
+            height: 2rem;
+            object-fit: scale-down;
+        }
+    }
+    /*search*/
+    .header-search {
+        grid-area: hsearch;
+        font-weight: lighter;
+        margin: auto;
+
+        .form-control {
+            font-size: var(--font-p-header) !important;
+            width: 30vw;
+            height: 2rem;
+            margin: auto;
+        }
+
+        a {
+            font-size: var(--font-a-header) !important;
+            color: var(--color-font-header);
+            margin: auto;
+        }
+    }
+    
+    /*Menu*/
+    .header-navbar {
+        grid-area: hmenu;
+        .navbar-toggler {
+            border: none;
+        }
+        a {
+            /*lista navbar*/
+            font-size: var(--font-a-header) !important;
+            color: var(--color-font-header);
+            margin: 0 auto;
+            font-weight: lighter;
+        }
+    }
+}
+
+@media (max-width:425px) {
+    .header {
+        grid-area:
+            "hlogo hmenu hmenu" 1fr "hsearch hsearch hsearch" 1fr;
+    }
+
+    .header-logo img {
+        height: 1rem;
+    }
+}
+
+/*------------- fin header---------------------*/

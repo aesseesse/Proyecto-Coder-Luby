@@ -1,0 +1,52 @@
+/*Inicio ofertas destacadas*/
+.selector-filtro {
+    /*contenedor filtro*/
+    display: block;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+
+    .txt-ofertas {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        
+    .lista-opciones{
+        ul li {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+        }
+    
+        h2 {
+            width: auto;
+            font-size: var(--font-h2-body);
+            /*12px*/
+            font-weight: bold;
+            color: var(--color-font);
+            font-family: 'mulish';
+        }
+    
+        a {
+            color: var(--color-font);
+            font-family: 'mulish';
+            font-size: var(--font-a-body);
+            /*10 px*/
+            margin: 0px 10px;
+        }
+    
+        a:hover {
+            color: var(--color-principal);
+            font-family: 'mulish';
+            font-size: var(--font-a-body);
+            /*12px*/
+            font-weight: bold;
+        }
+    }
+}
+/*Fin ofertas destacadas*/

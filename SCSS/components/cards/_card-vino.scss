@@ -1,0 +1,63 @@
+/*Inicio Cards*/
+.item-card-vino {
+    /*card*/
+    margin: 15px 2%;
+    background-image: url(./Img/Card-Fondo\ 1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 400px;
+    height: 300px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    /*contenido dentro de la card botella + texto*/
+    .contenido-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /*imagen derecha*/
+        img{
+                width: 60px;
+            }
+            
+        /*text*/
+        .contenido-txt-card {
+            height: fit-content;
+            width: 220px;
+            padding: 5%;
+            text-align: center;
+            background-color: var(--color-shadow-white);
+            border-radius: 5%;
+                h2{
+                    color: var(--color-font-header);
+                    font-family: 'Mulish';
+                    font-size: var(--font-h2-card);
+                }
+            
+                p{
+                    color: var(--color-font-header);
+                    font-family: 'Mulish';
+                    font-size: var(--font-p-card);
+                }
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Fin Cards en home*/

@@ -1,0 +1,123 @@
+/*Font size*/
+/*PC*/
+:root {
+--font-h2-header: 20px;
+--font-h3-header: 18px;
+--font-h4-header: 14px;
+--font-p-header: 12px;
+--font-a-header: 18px;
+
+--font-h2-body: 30px;
+--font-h3-body: 26px;
+--font-h4-body: 22px;
+--font-p-body: 14px;
+--font-a-body: 18px;
+
+--font-h2-banner: 32px;
+--font-h3-banner: 40px;
+--font-p-banner: 18px;
+--font-a-banner: 24px;
+
+--font-h2-card: 24px;
+--font-h3-card: 16px;
+/*no usada*/
+--font-h4-card:14px;
+/*no usada*/
+--font-p-card: 14px;
+--font-a-card: 12px;
+/*no usada*/
+}
+
+/*Laptop*/
+@media (max-width:1024px) {
+    body {
+        --font-h2-header: 14px;
+        --font-h3-header: 12px;
+        --font-h4-header: 10px;
+        --font-p-header: 10px;
+        --font-a-header: 12px;
+
+        --font-h2-body: 22px;
+        --font-h3-body: 18px;
+        --font-h4-body: 16px;
+        --font-p-body: 14px;
+        --font-a-body: 14px;
+
+        --font-h2-banner: 24px;
+        --font-h3-banner: 32px;
+        --font-p-banner: 14px;
+        --font-a-banner: 20px;
+
+        --font-h2-card: 18px;
+        --font-h3-card: 12px;
+        /*no usada*/
+        --font-h4-card: 12px;
+        /*no usada*/
+        --font-p-card: 12px;
+        --font-a-card: 12px;
+        /*no usada*/
+    }
+}
+
+
+/*Tablet*/
+@media (max-width:768px) {
+    body {
+        --font-h2-header: 12px;
+        --font-h3-header: 10px;
+        --font-h4-header: 8px;
+        --font-p-header: 8px;
+        --font-a-header: 10px;
+
+        --font-h2-body: 18px;
+        --font-h3-body: 14px;
+        --font-h4-body: 12px;
+        --font-p-body: 10px;
+        --font-a-body: 10px;
+
+        --font-h2-banner: 18px;
+        --font-h3-banner: 28px;
+        --font-p-banner: 12px;
+        --font-a-banner: 14px;
+
+        --font-h2-card: 14px;
+        --font-h3-card: 10px;
+        /*no usada*/
+        --font-h4-card: 10px;
+        /*no usada*/
+        --font-p-card: 10px;
+        --font-a-card: 10px;
+        /*no usada*/
+    }
+}
+
+/*Cell*/
+@media (max-width:425px) {
+    body {
+        --font-h2-header: 12px;
+        --font-h3-header: 10px;
+        --font-h4-header: 8px;
+        --font-p-header: 8px;
+        --font-a-header: 10px;
+
+        --font-h2-banner: 14px;
+        --font-h3-banner: 16px;
+        --font-p-banner: 10px;
+        --font-a-banner: 12px;
+
+        --font-h2-body: 12px;
+        --font-h3-body: 10px;
+        --font-h4-body: 10px;
+        --font-p-body: 10px;
+        --font-a-body: 10px;
+
+        --font-h2-card: 16px;
+        --font-h3-card: 10px;
+        /*no usada*/
+        --font-h4-card: 10px;
+        /*no usada*/
+        --font-p-card: 10px;
+        --font-a-card: 10px;
+        /*no usada*/
+    }
+}

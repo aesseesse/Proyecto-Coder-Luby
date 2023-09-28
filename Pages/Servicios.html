@@ -13,6 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
+
     <link rel="stylesheet" href="./../style.css">
     <title>Luby Drinks</title>
 
@@ -20,252 +21,250 @@
 </head>
 
 <body>
-    <main>
+
     <!--inicio Header-->
-    <header class="header">
+    <header class="header mx-auto">
+    
         <nav class="navbar navbar-expand-lg navbar-light">
-            <a href="./../index.html" class="logo"><img src="./../Img/Luby.png" alt="logo luby drinks"></a>
+            <div class="header-logo">
+                <a href="./../index.html" class="logo"><img src="./../Img/Luby.png" alt="logo luby drinks"></a>
+            </div>
     
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-    
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item px-2"><a href="./Nosotros.html">Nosotros</a></li>
-                    <li class="nav-item px-2"><a href="#">Servicios</a></li>
-                    <li class="nav-item px-2"><a href="./Vinos.html">Vinos</a></li>
-                    <li class="nav-item px-2"><a href="./Contacto.html">Contacto</a></li>
-                    <li class="nav-item px-2"><a href="./Cervezas.html">Cervezas</a></li>
-                    <li class="nav-item px-2"><a href="#top">Iniciar sesión</a></li>
-                    <li class="nav-item px-2"><a href="#top">Carrito</a></li>
-                </ul>
-                <form class="form-inline">
-                    <input class="form-control form-control-sm" type="search" placeholder="Buscar">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+            <div class="header-search">
+                <form class="d-flex" role="search">
+                    <input class="form-control" type="search" placeholder="Vinos, cervezas, Rosé,..." aria-label="Buscar">
+                    <a class="btn btn-search" type="submit" href=""><i class="fa-solid fa-magnifying-glass"
+                            style="color: #f5f5f5;"></i> Buscar</a>
                 </form>
+            </div>
+    
+            <div class="header-navbar">
+                <button class="navbar-toggler my-2" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars" style="color: #f5f5f5;"></i>
+                </button>
+    
+    
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    
+                    <div class="header-navbar-search">
+                        <form class="d-flex" role="search">
+                            <input class="form-control" type="search" placeholder="Vinos, cervezas, Rosé,..."
+                                aria-label="Buscar">
+                            <a class="btn btn-search" type="submit" href=""><i class="fa-solid fa-magnifying-glass"
+                                    style="color: #f5f5f5;"></i> Buscar</a>
+                        </form>
+                    </div>
+    
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item px-2"><a href="./Nosotros.html">Nosotros</a></li>
+                        <li class="nav-item px-2"><a href="./Servicios.html">Servicios</a></li>
+                        <li class="nav-item px-2"><a href="./Vinos.html">Vinos</a></li>
+                        <li class="nav-item px-2"><a href="./Contacto.html">Contacto</a></li>
+                        <li class="nav-item px-2"><a href="./Cervezas.html">Cervezas</a></li>
+                        <li class="nav-item px-2"><a href="./Cart.html">Carrito</a></li>
+                        <li class="nav-item px-2"><a href="#top">Iniciar sesión</a></li>
+    
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
     <!--Fin Header-->
         <!---------------------------------------------------------------->
-        <content>
-            <div class="servicios-nav">
-                <ul class="nav justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Catering</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Cocteleria</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Catas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Proveedores</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Eventos</a>
-                    </li>
-                </ul>
+        
+    <main>
+        <div class="servicios-nav navbar-collapse">
+            <nav class="nav justify-content-center">
+                <a class="nav-link" href="#Catering">Catering</a>
+                <a class="nav-link" href="#Cocteleria">Cocteleria</a>
+                <a class="nav-link" href="#Catas">Catas</a>
+                <a class="nav-link" href="#Eventos">Eventos</a>
+                <a class="nav-link" href="#Proveedores">Proveedores</a>
+            </nav>
+        </div>
+
+
+        <div class="row">
+            <div class="col-sm-6" id="Catering">
+                <div class="card m-1">
+                    <div class="card-body">
+                        <h5 class="card-title">Catering</h5>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit eum consectetur asperiores accusamus quibusdam delectus a eveniet explicabo veritatis fugiat corporis autem repellendus sit tempora, quam officiis accusantium, sequi cupiditate?</p>
+                        <a href="#" class="btn btn-primary">contactanos</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6" id="Cocteleria">
+                <div class="card m-1">
+                    <div class="card-body">
+                        <h5 class="card-title">Cocteleria</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia rem pariatur harum reprehenderit voluptas iste exercitationem animi blanditiis nisi facilis cum, sunt nihil perspiciatis fugit cumque. Earum dolore commodi culpa!</p>
+                        <a href="#" class="btn btn-primary">contactanos</a>
+                    </div>
+                </div>
             </div>
 
-
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="card m-1">
-                        <div class="card-body">
-                            <h5 class="card-title">Catering</h5>
-                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit eum consectetur asperiores accusamus quibusdam delectus a eveniet explicabo veritatis fugiat corporis autem repellendus sit tempora, quam officiis accusantium, sequi cupiditate?</p>
-                            <a href="#" class="btn btn-primary">contactanos</a>
-                        </div>
+            <div class="col-sm-6" id="Catas">
+                <div class="card m-1">
+                    <div class="card-body">
+                        <h5 class="card-title">Catas</h5>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit eum consectetur
+                            asperiores accusamus quibusdam delectus a eveniet explicabo veritatis fugiat corporis autem repellendus
+                            sit tempora, quam officiis accusantium, sequi cupiditate?</p>
+                        <a href="#" class="btn btn-primary">contactanos</a>
                     </div>
                 </div>
-                <div class="col-sm-6">
-                    <div class="card m-1">
-                        <div class="card-body">
-                            <h5 class="card-title">Cocteleria</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia rem pariatur harum reprehenderit voluptas iste exercitationem animi blanditiis nisi facilis cum, sunt nihil perspiciatis fugit cumque. Earum dolore commodi culpa!</p>
-                            <a href="#" class="btn btn-primary">contactanos</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6">
-                    <div class="card m-1">
-                        <div class="card-body">
-                            <h5 class="card-title">Catas</h5>
-                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit eum consectetur
-                                asperiores accusamus quibusdam delectus a eveniet explicabo veritatis fugiat corporis autem repellendus
-                                sit tempora, quam officiis accusantium, sequi cupiditate?</p>
-                            <a href="#" class="btn btn-primary">contactanos</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="card m-1">
-                        <div class="card-body">
-                            <h5 class="card-title">Proveedores</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia rem pariatur harum
-                                reprehenderit voluptas iste exercitationem animi blanditiis nisi facilis cum, sunt nihil perspiciatis
-                                fugit cumque. Earum dolore commodi culpa!</p>
-                            <a href="#" class="btn btn-primary">contactanos</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6">
-                    <div class="card m-1">
-                        <div class="card-body">
-                            <h5 class="card-title">Eventos</h5>
-                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit eum consectetur asperiores accusamus quibusdam delectus a eveniet explicabo veritatis fugiat corporis autem repellendus sit tempora, quam officiis accusantium, sequi cupiditate?</p>
-                            <a href="#" class="btn btn-primary">contactanos</a>
-                        </div>
-                    </div>
-                </div>
-               
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        </content>
-
-
-
-        <!--Inicio footer-->
-        <footer class="footer page-footer">
-        
-            <!-- Footer Links -->
-            <div class="container-fluid">
-        
-                <!-- Grid row -->
-                <div class="row">
-        
-                    <!-- Inicio Grid column 1  nav-vinos-->
-                    <div class="col- mx-auto">
-        
-                        <!-- Content -->
-                        <nav class="nav-vinos">
-                            <ul>
-                                <h2>Vinos</h2>
-                                <li><a href="./../../Vinos.html">Todos los vinos</a></li>
-                                <li><a href="#top">Tintos</a></li>
-                                <li><a href="#top">Blancos</a></li>
-                                <li><a href="#top">Rosé</a></li>
-                                <li><a href="#top">Espumantes</a></li>
-                            </ul>
-                        </nav>
-        
-                    </div>
-                    <!-- Fin Grid column 1-->
-        
-                    <!-- Inicio Grid column 2 nav-cervezas -->
-                    <div class="col- mx-auto">
-        
-                        <!-- Links -->
-                        <nav class="nav-cervezas">
-                            <ul>
-                                <h2>Cervezas</h2>
-                                <li><a href="./../../Cervezas.html">Todas las cervezas</a></li>
-                            </ul>
-                        </nav>
-        
-                    </div>
-                    <!-- Fin Grid column 2 -->
-        
-                    <!-- Inicio Grid column 3 nav-nosotros-->
-                    <div class="col- mx-auto">
-        
-                        <!-- Links -->
-                        <nav class="nav-nosotros">
-                            <ul>
-                                <h2>Nosotros</h2>
-                                <li><a href="./../../Nosotros.html">Sobre nosotros</a></li>
-                                <li><a href="./../../contacto.html">Contacto</a></li>
-                                <li><a href="./../../FAQ.html">Perguntas frecuentes</a></li>
-                                <li><a href="./../../work.html">Trabaja con nosotros</a></li>
-                                <li><a href="./../../mensajes.html">Mensajes</a></li>
-                            </ul>
-                        </nav>
-        
-                    </div>
-                    <!-- Fin Grid column 3 -->
-        
-                    <!-- Inicio Grid column 4 nav-rrss -->
-                    <div class="col- mx-auto">
-        
-                        <!-- Links -->
-                        <nav class="nav-pago">
-                            <h2>Redes</h2>
-                            <li class="footer-logos rrss-logo">
-                                <i class="fa-brands fa-facebook"></i>
-                                <i class="fa-brands fa-twitter"></i>
-                                <i class="fa-brands fa-instagram"></i>
-                                <i class="fa-brands fa-tiktok"></i>
-                                <i class="fa-brands fa-youtube"></i>
-                            </li>
-                        </nav>
-
-                        <nav class="nav-pago">
-                            <h2>Medios de pago</h2>
-                            <li class="footer-logos pago-logo">
-                                <i class="fa-brands fa-cc-visa"></i>
-                                <i class="fa-brands fa-cc-mastercard"></i>
-                                <i class="fa-brands fa-cc-paypal"></i>
-                            </li>
-                        </nav>
-                    </div>
-                    <!-- Fin Grid column 4 -->
-        
-                    <!-- Inicio Grid column 5  nav-correo-->
-                    <div class="col- mx-auto">
-        
-                        <!-- Links -->
-                        <nav class="nav-correo">
-                            <div class="nav-correo-txt">
-                                <h2>Únete a nuestra lista y recibe tips, noticias y promociones.</h2>
-                            </div>
-        
-                            <div class="nav-correo-input">
-                                <input placeholder="Ingrese su email" class="input-mail" name="email" type="email">
-                                <button class="Subscribe">Subscribe</button>
-                            </div>
-        
-        
-        
-                        </nav>
-        
-                    </div>
-                    <!-- Fin Grid column 5 -->
-        
-                </div>
-                <!-- Grid row -->
-        
             </div>
-            <!-- Footer Links -->
-        
-            <!-- Copyright -->
-            <div class="footer-copyright text-center py-1">
-                <p>© 2023 Copyright: <a href="./../index.html">lubydrinks.com.ar</a></p>
+            <div class="col-sm-6" id="Proveedores">
+                <div class="card m-1">
+                    <div class="card-body">
+                        <h5 class="card-title">Proveedores</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia rem pariatur harum
+                            reprehenderit voluptas iste exercitationem animi blanditiis nisi facilis cum, sunt nihil perspiciatis
+                            fugit cumque. Earum dolore commodi culpa!</p>
+                        <a href="#" class="btn btn-primary">contactanos</a>
+                    </div>
+                </div>
             </div>
-            <!-- Copyright -->
-        
-        </footer>
-        <!-- Footer -->
-        <!---------------------------------------------------------------->
+
+            <div class="col-sm-6" id="Eventos">
+                <div class="card m-1">
+                    <div class="card-body">
+                        <h5 class="card-title">Eventos</h5>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit eum consectetur asperiores accusamus quibusdam delectus a eveniet explicabo veritatis fugiat corporis autem repellendus sit tempora, quam officiis accusantium, sequi cupiditate?</p>
+                        <a href="#" class="btn btn-primary">contactanos</a>
+                    </div>
+                </div>
+            </div>
+            
 
     </main>
+
+
+
+    <!--Inicio footer-->
+    <footer class="footer page-footer">
+    
+        <!-- Footer Links -->
+        <div class="container-fluid">
+    
+            <!-- Grid row -->
+            <div class="row">
+    
+                <!-- Inicio Grid column 1  nav-vinos-->
+                <div class="col- mx-auto">
+    
+                    <!-- Content -->
+                    <nav class="nav-vinos">
+                        <ul>
+                            <h2>Vinos</h2>
+                            <li><a href="./../../Vinos.html">Todos los vinos</a></li>
+                            <li><a href="#top">Tintos</a></li>
+                            <li><a href="#top">Blancos</a></li>
+                            <li><a href="#top">Rosé</a></li>
+                            <li><a href="#top">Espumantes</a></li>
+                        </ul>
+                    </nav>
+    
+                </div>
+                <!-- Fin Grid column 1-->
+    
+                <!-- Inicio Grid column 2 nav-cervezas -->
+                <div class="col- mx-auto">
+    
+                    <!-- Links -->
+                    <nav class="nav-cervezas">
+                        <ul>
+                            <h2>Cervezas</h2>
+                            <li><a href="./../../Cervezas.html">Todas las cervezas</a></li>
+                        </ul>
+                    </nav>
+    
+                </div>
+                <!-- Fin Grid column 2 -->
+    
+                <!-- Inicio Grid column 3 nav-nosotros-->
+                <div class="col- mx-auto">
+    
+                    <!-- Links -->
+                    <nav class="nav-nosotros">
+                        <ul>
+                            <h2>Nosotros</h2>
+                            <li><a href="./../../Nosotros.html">Sobre nosotros</a></li>
+                            <li><a href="./../../contacto.html">Contacto</a></li>
+                            <li><a href="./../../FAQ.html">Perguntas frecuentes</a></li>
+                            <li><a href="./../../work.html">Trabaja con nosotros</a></li>
+                            <li><a href="./../../mensajes.html">Mensajes</a></li>
+                        </ul>
+                    </nav>
+    
+                </div>
+                <!-- Fin Grid column 3 -->
+    
+                <!-- Inicio Grid column 4 nav-rrss -->
+                <div class="col- mx-auto">
+    
+                    <!-- Links -->
+                    <nav class="nav-pago">
+                        <h2>Redes</h2>
+                        <li class="footer-logos rrss-logo">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-tiktok"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                        </li>
+                    </nav>
+
+                    <nav class="nav-pago">
+                        <h2>Medios de pago</h2>
+                        <li class="footer-logos pago-logo">
+                            <i class="fa-brands fa-cc-visa"></i>
+                            <i class="fa-brands fa-cc-mastercard"></i>
+                            <i class="fa-brands fa-cc-paypal"></i>
+                        </li>
+                    </nav>
+                </div>
+                <!-- Fin Grid column 4 -->
+    
+                <!-- Inicio Grid column 5  nav-correo-->
+                <div class="col- mx-auto">
+    
+                    <!-- Links -->
+                    <nav class="nav-correo">
+                        <div class="nav-correo-txt">
+                            <h2>Únete a nuestra lista y recibe tips, noticias y promociones.</h2>
+                        </div>
+    
+                        <div class="nav-correo-input">
+                            <input placeholder="Ingrese su email" class="input-mail" name="email" type="email">
+                            <button class="Subscribe">Subscribe</button>
+                        </div>
+    
+    
+    
+                    </nav>
+    
+                </div>
+                <!-- Fin Grid column 5 -->
+    
+            </div>
+            <!-- Grid row -->
+    
+        </div>
+        <!-- Footer Links -->
+    
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-1">
+            <p>© 2023 Copyright: <a href="./../index.html">lubydrinks.com.ar</a></p>
+        </div>
+        <!-- Copyright -->
+    
+    </footer>
+    <!-- Footer -->
+    <!---------------------------------------------------------------->
+
 </body>
 
 </html>
