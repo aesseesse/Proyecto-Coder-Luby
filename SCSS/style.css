@@ -253,13 +253,13 @@ Cell
   filter: drop-shadow(0px 1px 0px #efefef) drop-shadow(0px 1px 0.5px rgba(239, 239, 239, 0.5));
   transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
 }
-.master-container .coupons form .input_field ::-moz-placeholder {
+.master-container .coupons form .input_field::-moz-placeholder {
   font-size: 100%;
 }
-.master-container .coupons form .input_field ::placeholder {
+.master-container .coupons form .input_field::placeholder {
   font-size: 100%;
 }
-.master-container .coupons form .input_field :focus {
+.master-container .coupons form .input_field:focus {
   border: 1px solid transparent;
   box-shadow: 0px 0px 0px 2px #242424;
   background-color: transparent;
@@ -295,13 +295,13 @@ Cell
   font-size: 100%;
   font-weight: bold;
 }
-.master-container .checkout .details span :nth-child(odd) {
+.master-container .checkout .details span:nth-child(odd) {
   font-size: 100%;
   font-weight: normal;
   color: #707175;
   margin: auto auto auto 0;
 }
-.master-container .checkout .details span :nth-child(even) {
+.master-container .checkout .details span:nth-child(even) {
   font-size: 100%;
   font-weight: bold;
   color: #47484b;
@@ -368,11 +368,11 @@ Cell
   justify-content: center;
   flex-direction: column;
   gap: 10px;
-  margin: 10px;
-  width: 300px;
+  width: 400px;
   background-color: #f5f5f5;
-  padding: 20px;
+  padding: 30px;
   border-radius: 10px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
 }
 .contacto .form .form-contact {
   color: #B13251;
@@ -380,13 +380,10 @@ Cell
   align-items: center;
   justify-content: center;
 }
-.contacto .form .form-contact h2 {
-  font-size: 175%;
+.contacto .form .form-contact h3 {
+  font-size: 150% !important;
 }
-.contacto .form .form-contact-text {
-  margin: 10px;
-}
-.contacto .form input {
+.contacto .form .form-data input {
   outline: 0;
   border: 1px solid #B13251;
   padding: 8px 14px;
@@ -394,25 +391,31 @@ Cell
   border-radius: 8px;
   width: 100%;
   height: auto;
-  font-size: 150%;
+  font-size: 100% !important;
 }
 .contacto .form .form-message {
   width: 100%;
 }
-.contacto .form textarea {
+.contacto .form .form-message textarea {
   border-radius: 8px;
   height: 100px;
   width: 100%;
   padding: 8px 14px;
   border: 1px solid #B13251;
-  font-size: 150%;
+  font-size: 100% !important;
+}
+.contacto .form .form-message textarea::-moz-placeholder {
+  font-size: 100%;
+}
+.contacto .form .form-message textarea::placeholder {
+  font-size: 100%;
 }
 .contacto .form button {
   padding: 8px;
   outline: 0;
   border: 0;
   border-radius: 8px;
-  font-size: 175%;
+  font-size: 100%;
   font-weight: 500;
   background-color: #B13251;
   color: #f5f5f5;

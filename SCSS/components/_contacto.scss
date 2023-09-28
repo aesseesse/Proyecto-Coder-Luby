@@ -9,48 +9,47 @@
         justify-content: center;
         flex-direction: column;
         gap: 10px;
-        margin: 10px;
-        width: 300px;
+        width: 400px;
         background-color: $color-background;
-        padding: 20px;
+        padding: 30px;
         border-radius: 10px;
-    
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+        
         .form-contact {
             color: $color-font-principal;
             display: flex;
             align-items: center;
             justify-content: center;
-            h2 {
-                font-size: $font-h2-body;
+            h3 {
+                    font-size: $font-h3-body !important;
+                }
+        }
+
+        .form-data {
+            input {
+                outline: 0;
+                border: 1px solid $color-font-principal;
+                padding: 8px 14px;
+                margin: 4px 0;
+                border-radius: 8px;
+                width: 100%;
+                height: auto;
+                font-size: $font-p-body !important;
             }
         }
-        .form-contact-text {
-            margin: 10px;
-        }
-
-        input {
-            outline: 0;
-            border: 1px solid $color-font-principal;
-            padding: 8px 14px;
-            margin: 4px 0;
-            border-radius: 8px;
-            width: 100%;
-            height: auto;
-            font-size: $font-h3-body;
-        }
-
         .form-message {
             width: 100%;
-        }
-
-        textarea {
-            border-radius: 8px;
-            height: 100px;
-            width: 100%;
-            padding: 8px 14px;
-            border: 1px solid $color-font-principal;
-            font-size: $font-h3-body;
-
+            textarea {
+                border-radius: 8px;
+                height: 100px;
+                width: 100%;
+                padding: 8px 14px;
+                border: 1px solid $color-font-principal;
+                font-size: $font-p-body !important;
+                &::placeholder{
+                    font-size: $font-p-body;
+                }
+            }
         }
 
         button {
@@ -58,7 +57,7 @@
             outline: 0;
             border: 0;
             border-radius: 8px;
-            font-size: $font-h2-body;
+            font-size: $font-p-body;
             font-weight: 500;
             background-color: $color-font-principal;
             color: $color-background;
