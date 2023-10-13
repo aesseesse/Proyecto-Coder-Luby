@@ -793,10 +793,10 @@ Cell
 /*------------- fin card vino---------------------*/
 /*------------- inicio card cerveza---------------------*/
 .item-card-cerveza:nth-child(odd) {
-  background-image: url(./../../../Img/Card-Fondo-cerveza\ 1.png);
+  background-image: url(./../Img/Card-Fondo-cerveza\ 1.png);
 }
 .item-card-cerveza:nth-child(even) {
-  background-image: url(./../../../Img/Card-Fondo-cerveza\ 2.png);
+  background-image: url(./../Img/Card-Fondo-cerveza\ 2.png);
 }
 
 /*------------- Fin card cerveza---------------------*/
