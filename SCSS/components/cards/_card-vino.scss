@@ -1,10 +1,10 @@
 /*------------- inicio card vino---------------------*/
 .item-card-vino {
     &:nth-child(odd) {
-    background-image: url(./../../../Img/Card-Fondo-vino\ 1.png);
+    background-image: url(../Img/Card-Fondo-vino\ 1.png);
     }
     &:nth-child(even) {
-        background-image: url(./../../../Img/Card-Fondo-vino\ 2.png);
+        background-image: url(../Img/Card-Fondo-vino\ 2.png);
     }
 }
 /*------------- fin card vino---------------------*/
