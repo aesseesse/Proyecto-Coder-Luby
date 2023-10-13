@@ -1,0 +1,68 @@
+/*------------- inicio card vino---------------------*/
+.item-card {
+    /*card*/
+    margin: 10px;
+    background-repeat: round;
+    background-size: contain;
+    width: 300px;
+    height: 200px;
+    transition: transform .2s;/* Animation */
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        transform: scale(1.1); 
+        box-shadow: 15px 15px 5px 0px rgba(0, 0, 0, 0.25);
+    }
+
+
+    /*contenido dentro de la card botella + texto*/
+    .contenido-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /*text*/
+        .contenido-txt-card {
+            height: fit-content;
+            width: 200px;
+            text-align: center;
+            background-color: $color-shadow-black;
+            border-radius: 5%;
+            padding: 10px;
+            text-decoration: none;
+            color: $color-font-header;
+        
+            h2 {
+                font-size: $font-h2-card;
+                margin: 0;
+                padding: 0;
+            }
+        
+            h3 {
+                text-decoration: none;
+                color: $color-font-header;
+                font-size: $font-h3-card;
+            }
+        
+            p {
+                font-size: $font-p-card;
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+        /*imagen derecha*/
+        .contenido-img-card {
+            img {
+                object-fit: cover;
+                width: 50px;
+                height: auto;
+            }
+        }
+    }
+}
+
+/*------------- fin card vino---------------------*/

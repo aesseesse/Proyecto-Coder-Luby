@@ -1,12 +1,21 @@
 @import '../scss/base/color';
 @import '../scss/base/fonts';
-@import '../scss/components/card-cart';
+
 @import '../scss/components/contacto';
 @import '../scss/components/contenedor-grid';
 @import '../scss/components/footer';
 @import '../scss/components/header';
 @import '../scss/components/nosotros';
+@import '../scss/components/servicios';
+@import '../scss/components/cart';
+
+@import '../scss/components/button/button.scss';
+
+@import '../scss/components/cards/card-item';
 @import '../scss/components/cards/card-cerveza';
 @import '../scss/components/cards/card-vino';
+@import '../scss/components/cards/card-product';
+
 @import '../scss/components/carousel/carousel';
+
 @import '../scss/components/selector/selector';

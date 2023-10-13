@@ -1,0 +1,35 @@
+.servicios-nav{
+
+    a{
+        text-decoration: none;
+        color: black;
+        font-size: $font-h3-body;
+        text-transform: uppercase;
+        &:hover{
+            font-weight: bold;
+            color: $color-principal;
+        }
+    }
+}
+
+.servicios{
+    width: 100vw;
+    .contenido-card{
+        .card-title{
+            text-align: center;
+            text-transform: uppercase;
+        }
+            .card-img{
+                width: 300px;
+                height: 150px;
+                overflow: hidden;
+                object-fit: cover;
+                img{
+                width: 100%;
+                }
+            }
+            
+    }
+    
+    
+}

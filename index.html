@@ -9,11 +9,13 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css" crossorigin="anonymous">
 
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <link rel="stylesheet" href="./SCSS/style.css">
+    <link rel="Icon Luby" href="./Img/logo luby.jpg">
 
     <title>Luby Drinks - 🍷 Vinos, 🍺 Cervezas y más</title>
 
@@ -32,7 +34,7 @@
                 <div class="header-search">
                     <form class="d-flex" role="search">
                         <input class="form-control mx-2" type="search" placeholder="Vinos, cervezas..." aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #f5f5f5;"></i> Buscar</button>
+                        <button class="button1 m-0"><a href="#"><i class="fa-solid fa-magnifying-glass"></i> Buscar</a></button>
                     </form>
                 </div>
 
@@ -43,7 +45,7 @@
                     </button>
             
                     <div class="collapse navbar-collapse" id="navbarScroll">
-                        <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <ul class="navbar-nav">
                             <li class="nav-item px-2"><a href="./Pages/Nosotros.html">Nosotros</a></li>
                             <li class="nav-item px-2"><a href="./Pages/Servicios.html">Servicios</a></li>
                             <li class="nav-item px-2"><a href="./Pages/Vinos.html">Vinos</a></li>
@@ -64,75 +66,52 @@
     <main class="main">
         <!--Inicio Carousel-->
 
-        <div class="carousel" id="demo" data-ride="carousel">
-            <div class="Controls">
-                <!-- Indicators -->
-                <ul class="carousel-indicators">
-                    <li data-target="#demo" data-slide-to="0" class="active"></li>
-                    <li data-target="#demo" data-slide-to="1"></li>
-                    <li data-target="#demo" data-slide-to="2"></li>
-                    <li data-target="#demo" data-slide-to="3"></li>
-                </ul>
-                <!-- Left and right controls -->
-                <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </a>
-                <a class="carousel-control-next" href="#demo" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </a>
-
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
-            <!-- The slideshow -->
-            
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <div class="carousel-content">
-                        <div class="carousel-txt">
-                            <h2>Nueva coleccion “Killka” </h2>
-                            <h3>30% OFF</h3>
-                            <p>¡Consigue esta colección a precio de lanzamiento!</p>
-                            <a class="btn" href="#" role="button">Ver colección</a>
-                        </div>
+                    <img src="./Img/banner1.jpg" class="d-block w-100" alt="Fondo promociones 1">
+                    <div class="carousel-caption mb-3">
+                        <h2>Nueva coleccion “Killka” </h2>
+                        <h3>30% OFF</h3>
+                        <p>¡Consigue esta colección a precio de lanzamiento!</p>
+                        <button class="button2"><a href="./pages/vinos.html">ver colección</a></button>
                     </div>
-                    <img src="./Img/banner1.jpg" alt="Promocion 1">
                 </div>
                 <div class="carousel-item">
-                    <div class="carousel-content">
-                        <div class="carousel-txt">
-                            <h2>Nueva coleccion “Killka” </h2>
-                            <h3>30% OFF</h3>
-                            <p>¡Consigue esta colección a precio de lanzamiento!</p>
-                            <a class="btn" href="#" role="button">Ver colección</a>
-                        </div>
+                    <img src="./Img/banner2.jpg" class="d-block w-100" alt="Fondo promociones 2">
+                    <div class="carousel-caption mb-3">
+                        <h2>Nueva coleccion “Killka” </h2>
+                        <h3>Malbec 2023 - 4x3</h3>
+                        <p>¡Consigue esta colección a precio de lanzamiento!</p>
+                        <button class="button2"><a href="./pages/vinos.html">ver colección</a></button>
                     </div>
-                    <img src="./Img/banner2.jpg" alt="Promocion 2">
-
                 </div>
                 <div class="carousel-item">
-                    <div class="carousel-content">
-                        <div class="carousel-txt">
-                            <h2>Nueva coleccion “Killka” </h2>
-                            <h3>30% OFF</h3>
-                            <p>¡Consigue esta colección a precio de lanzamiento!</p>
-                            <a class="btn" href="#" role="button">Ver colección</a>
-                        </div>
+                    <img src="./Img/banner3.jpg" class="d-block w-100" alt="Fondo promociones 3">
+                    <div class="carousel-caption mb-3">
+                        <h2>Nueva coleccion “Killka” </h2>
+                        <h3>cajas x 6 - 25% OFF</h3>
+                        <p>¡Consigue esta colección a precio de lanzamiento!</p>
+                        <button class="button2"><a href="./pages/vinos.html">ver colección</a></button>
                     </div>
-                    <img src="./Img/banner3.jpg" alt="Promocion 3">
-
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-content">
-                        <div class="carousel-txt">
-                            <h2>Nueva coleccion “Killka” </h2>
-                            <h3>30% OFF</h3>
-                            <p>¡Consigue esta colección a precio de lanzamiento!</p>
-                            <a class="btn btn-primary" href="#" role="button">Ver colección</a>
-                        </div>
-                    </div>
-                    <img src="./Img/banner4.jpg" alt="Promocion 4">
-
                 </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
 
         <!--Fin Carousel-->
@@ -142,7 +121,7 @@
         <!--inicio seleccion filtro-->
         <div class="selector-filtro">
             <div class="txt-titulo">
-                <h2>Ofertas destacadas</h2>
+                <h4>Ofertas destacadas</h4>
             </div>
 
             <div class="txt-subtitulo1">
@@ -158,34 +137,32 @@
         
         <!--Fin seleccion filtro-->
             
-            
         <!------------------------------------------------------------>
+        <!--inicio seccion cards-->
         <div class="principal-content">
             
             <!--inicio seccion cards-->
             <div class="grid-ofertas row-1">
                 <!--card oferta vinos-->
                 <!-----------------CARD 1--------------------------------->
-                <div class="item-card-vino col- item-1">
+                <div class="item-card item-card-vino col- item-1">
                     <a href="./Pages/Vinos.html">
-                        <div class="contenido-card">
-                            <div class="contenido-txt-card">
-                                <h2>Cullen</h2>
-                                <p>Sauvignon Blanc - Semillon</p>
-                                <p>Australia </p>
-                                <h3>$3500</h3>
-                            </div>
-                
-                            <div class="contenido-img-card">
-                                <img src="./Img/Botella-Vino-Moscato.png" alt="botella vino Moscato">
-                            </div>
+                    <div class="contenido-card">
+                        <div class="contenido-txt-card">
+                            <h2>Cullen</h2>
+                            <p>Sauvignon Blanc - Semillon</p>
+                            <p>Australia </p>
+                            <h3>$3500</h3>
                         </div>
+            
+                        <div class="contenido-img-card">
+                            <img src="./Img/Botella-Vino-Moscato.png" alt="botella vino Moscato">
+                        </div>
+                    </div>
                     </a>
                 </div>
-
-
-                <!----------------------CARD 2----------------------------->
-                <div class="item-card-vino col- item-2">
+                <!----------------------CARD 2------------------------>
+                <div class="item-card item-card-vino col- item-2">
                     <a href="./Pages/Vinos.html">
                         <div class="contenido-card">
                             <div class="contenido-txt-card">
@@ -196,13 +173,13 @@
                             </div>
             
                             <div class="contenido-img-card">
-                                <img src="./Img/Botella-Vino-Moscato.png" alt="botella vino Moscato">
+                                <img src="./Img/Botella-Vino-Blanco.png" alt="botella vino Blanco">
                             </div>
                         </div>
                     </a>
                 </div>
-                <!----------------------CARD 3------------------------->
-                <div class="item-card-vino col- item-3">
+                <!----------------------CARD 3------------------------>
+                <div class="item-card item-card-vino col- item-3">
                     <a href="./Pages/Vinos.html">
                         <div class="contenido-card">
                             <div class="contenido-txt-card">
@@ -218,8 +195,8 @@
                         </div>
                     </a>
                 </div>
-                <!-----------------CARD 4--------------------------------->
-                <div class="item-card-vino col- item-4">
+                <!----------------------CARD 4------------------------->
+                <div class="item-card item-card-vino col- item-4">
                     <a href="./Pages/Vinos.html">
                         <div class="contenido-card">
                             <div class="contenido-txt-card">
@@ -235,8 +212,8 @@
                         </div>
                     </a>
                 </div>
-                <!----------------------CARD 5----------------------------->
-                <div class="item-card-vino col- item-5">
+                <!----------------------CARD 5------------------------->
+                <div class="item-card item-card-vino col- item-5">
                     <a href="./Pages/Vinos.html">
                         <div class="contenido-card">
                             <div class="contenido-txt-card">
@@ -246,14 +223,14 @@
                                 <h3>$3500</h3>
                             </div>
                             <div class="contenido-img-card">
-                                <img src="./Img/Botella-Vino-Moscato.png" alt="botella vino Moscato">
+                                <img src="./Img/Botella-Vino-Blanco.png" alt="botella vino Blanc">
                             </div>
             
                         </div>
                     </a>
                 </div>
                 <!----------------------CARD 6------------------------->
-                <div class="item-card-vino col- item-6">
+                <div class="item-card item-card-vino col- item-6">
                     <a href="./Pages/Vinos.html">
                         <div class="contenido-card">
                             <div class="contenido-txt-card">
@@ -266,6 +243,40 @@
                                 <img src="./Img/Botella-Vino-Tinto.png" alt="botella vino tinto">
                             </div>
             
+                        </div>
+                    </a>
+                </div>
+                <!----------------------CARD 7------------------------->
+                <div class="item-card item-card-vino col- item-7">
+                    <a href="./Pages/Vinos.html">
+                        <div class="contenido-card">
+                            <div class="contenido-txt-card">
+                                <h2>Puesto del Marques</h2>
+                                <p>Malbec - Tinto</p>
+                                <p>Argentina</p>
+                                <h3>$3500</h3>
+                            </div>
+                            <div class="contenido-img-card">
+                                <img src="./Img/Botella-Vino-Tinto.png" alt="botella vino tinto">
+                            </div>
+                
+                        </div>
+                    </a>
+                </div>
+                <!----------------------CARD 8------------------------->
+                <div class="item-card item-card-vino col- item-8">
+                    <a href="./Pages/Vinos.html">
+                        <div class="contenido-card">
+                            <div class="contenido-txt-card">
+                                <h2>Puesto del Marques</h2>
+                                <p>Malbec - Tinto</p>
+                                <p>Argentina</p>
+                                <h3>$3500</h3>
+                            </div>
+                            <div class="contenido-img-card">
+                                <img src="./Img/Botella-Vino-Blanco.png" alt="botella vino tinto">
+                            </div>
+                
                         </div>
                     </a>
                 </div>
@@ -275,8 +286,8 @@
             <div class="grid-ofertas row-2">
         <!--card oferta cervezas-->
         <!----------------------CARD 1------------------------------>
-                <div class="item-card-cerveza col- item-1">
-                    <a href="./Pages/Cervezas.html">
+                <div class="item-card item-card-cerveza col- item-1">
+                    <a href="./Pages/producto_cerveza.html">
                         <div class="contenido-card">
                             <div class="contenido-txt-card">
                                 <h2>Blumenau</h2>
@@ -292,8 +303,8 @@
                     </a>
                 </div>
                 <!----------------------CARD 2-------------------------->  
-                <div class="item-card-cerveza col- item-2">
-                    <a href="./Pages/Cervezas.html">
+                <div class="item-card item-card-cerveza col- item-2">
+                    <a href="./Pages/producto_cerveza.html">
                         <div class="contenido-card">
                             <div class="contenido-txt-card">
                                 <h2>Coruja</h2>
@@ -309,8 +320,8 @@
                     </a>
                 </div>
                 <!----------------------CARD 3------------------------>    
-                <div class="item-card-cerveza col- item-3">
-                    <a href="./Pages/Cervezas.html">
+                <div class="item-card item-card-cerveza col- item-3">
+                    <a href="./Pages/producto_cerveza.html">
                         <div class="contenido-card">
                             <div class="contenido-txt-card">
                                 <h2>Paulaner</h2>
@@ -327,8 +338,8 @@
                     </a>
                 </div>
                 <!---------------------CARD 4------------------------------>
-                <div class="item-card-cerveza col- item-4">
-                    <a href="./Pages/Cervezas.html">
+                <div class="item-card item-card-cerveza col- item-4">
+                    <a href="./Pages/producto_cerveza.html">
                         <div class="contenido-card">
                             <div class="contenido-txt-card">
                                 <h2>Blumenau</h2>
@@ -345,8 +356,8 @@
                     </a>
                 </div>
                 <!----------------------CARD 5-------------------------->
-                <div class="item-card-cerveza col- item-5">
-                    <a href="./Pages/Cervezas.html">
+                <div class="item-card item-card-cerveza col- item-5">
+                    <a href="./Pages/producto_cerveza.html">
                         <div class="contenido-card">
                             <div class="contenido-txt-card">
                                 <h2>Coruja</h2>
@@ -362,8 +373,8 @@
                     </a>
                 </div>
                 <!----------------------CARD 6------------------------>    
-                <div class="item-card-cerveza col- item-1">
-                    <a href="./Pages/Cervezas.html">
+                <div class="item-card item-card-cerveza col- item-1">
+                    <a href="./Pages/producto_cerveza.html">
                         <div class="contenido-card">
                             <div class="contenido-txt-card">
                                 <h2>Paulaner</h2>
@@ -377,17 +388,148 @@
                         </div>
                     </a>
                 </div>
+                <!----------------------CARD 7------------------------>
+                <div class="item-card item-card-cerveza col- item-7">
+                    <a href="./Pages/producto_cerveza.html">
+                        <div class="contenido-card">
+                            <div class="contenido-txt-card">
+                                <h2>Paulaner</h2>
+                                <p>Cerveza</p>
+                                <p>Austrália</p>
+                                <h3>$3500</h3>
+                            </div>
+                
+                            <div class="contenido-img-card">
+                                <img src="./Img/Botella-Cerveza-Paulaner.png" alt="Botella-Cerveza-Paulaner.png">
+                            </div>
+                
+                        </div>
+                    </a>
+                </div>
+                <!---------------------CARD 8------------------------------>
+                <div class="item-card item-card-cerveza col- item-8">
+                    <a href="./Pages/producto_cerveza.html">
+                        <div class="contenido-card">
+                            <div class="contenido-txt-card">
+                                <h2>Blumenau</h2>
+                                <p>Cerveza</p>
+                                <p>Austrália</p>
+                                <h3>$3500</h3>
+                            </div>
+                
+                            <div class="contenido-img-card">
+                                <img src="./Img/Botella-Cerveza-Blumenau.png" alt="Botella-Cerveza-Blumenau">
+                            </div>
+                
+                        </div>
+                    </a>
+                </div>
             
             </div>
             
             <!--Fin seccion cards-->
 
         </div>
+        <!--fin seccion cards-->
+        <!------------------------------------------------------------>
+        <!--inicio seleccion filtro-->
+        <div class="selector-filtro">
+            <div class="txt-titulo">
+                <h4>Ofertas en vinos</h4>
+            </div>
+        
+            <div class="txt-subtitulo1">
+                <a href="#">Más vendidos</a>
+            </div>
+            <div class="txt-subtitulo2">
+                <a href="#">Promociones</a>
+            </div>
+            <div class="txt-subtitulo3">
+                <a href="#">Lanzamientos</a>
+            </div>
+        </div>
+        
+        <!--Fin seleccion filtro-->
+        <!------------------------------------------------------------>
+        
+        <!--inicio seccion cards vinos-->
+        <div class="container mx-auto my-2">
+            <div class="row g-3">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card-producto-small card">
+                        <div class="card-botella">
+                            <img src="./../Img/Botella-Vino-1.png" alt="Botella de vino Petit Verlot">
+                        </div>
+                        <div class="card-txt text-center">
+                            <h3>Petit Verlot 2023</h3>
+                            <p>Italia - Tinto - Petit Verdot - 750ml</p>
+                            <h2><strong>$ 4999,90</strong></h2>
+                            <button class="button2"><a href="./pages/cart.html"><i class="fa-solid fa-cart-shopping"></i>
+                                    comprar</a></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card-producto-small card">
+                        <div class="card-botella">
+                            <img src="./../Img/Botella-Vino-1.png" alt="Botella de vino Petit Verlot">
+                        </div>
+                        <div class="card-txt text-center">
+                            <h3>Petit Verlot 2023</h3>
+                            <p>Italia - Tinto - Petit Verdot - 750ml</p>
+                            <h2><strong>$ 4999,90</strong></h2>
+                            <button class="button2"><a href="./pages/cart.html"><i class="fa-solid fa-cart-shopping"></i>
+                                    comprar</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card-producto-small card">
+                        <div class="card-botella">
+                            <img src="./../Img/Botella-Vino-1.png" alt="Botella de vino Petit Verlot">
+                        </div>
+                        <div class="card-txt text-center">
+                            <h3>Petit Verlot 2023</h3>
+                            <p>Italia - Tinto - Petit Verdot - 750ml</p>
+                            <h2><strong>$ 4999,90</strong></h2>
+                            <button class="button2"><a href="./pages/cart.html"><i class="fa-solid fa-cart-shopping"></i>
+                                    comprar</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card-producto-small card">
+                        <div class="card-botella">
+                            <img src="./../Img/Botella-Vino-1.png" alt="Botella de vino Petit Verlot">
+                        </div>
+                        <div class="card-txt text-center">
+                            <h3>Petit Verlot 2023</h3>
+                            <p>Italia - Tinto - Petit Verdot - 750ml</p>
+                            <h2><strong>$ 4999,90</strong></h2>
+                            <button class="button2"><a href="./pages/cart.html"><i class="fa-solid fa-cart-shopping"></i>
+                                    comprar</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!--fin seccion cards vinos-->
+        <!------------------------------------------------------------>
+        <!--inicio seccion-->
+        <div>
+        
+        </div>
+        <!--fin seccion-->
+        <!------------------------------------------------------------>
+
     </main>
 
     <!---------------------------------------------------------------->
     <!--Inicio footer-->
-
     <footer class="footer text-center text-white">
         <!-- Grid container -->
         <div class="container p-1">
@@ -398,12 +540,10 @@
                         class="fab fa-facebook-f"></i></a>
 
                 <!-- Twitter -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                        class="fab fa-twitter"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
 
                 <!-- Google -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                        class="fab fa-google"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
 
                 <!-- Instagram -->
                 <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
@@ -414,14 +554,13 @@
                         class="fab fa-linkedin-in"></i></a>
 
                 <!-- Github -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                        class="fab fa-github"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
             </section>
             <!-- Section: Social media -->
 
             <!-- Section: Form -->
             <section class="footer-form my-2">
-                
+
                 <div class="footer-form-txt">
                     <h4>Únete a nuestra lista y recibe tips, noticias y promociones.</h4>
                 </div>
@@ -442,7 +581,7 @@
                 <div class="row">
                     <!--Grid column-->
                     <div class="footer-links-col col-lg-3 col-md-6">
-                        <h3 class="text-uppercase">vinos</h3>
+                        <h3 class="text-uppercase"><a href="./pages/vinos.html" class="text-white">Vinos</a></h3>
                         <ul class="list-unstyled">
                             <li><a href="#!" class="text-white">Tintos</a></li>
                             <li><a href="#!" class="text-white">Blancos</a></li>
@@ -454,7 +593,7 @@
 
                     <!--Grid column-->
                     <div class="footer-links-col col-lg-3 col-md-6">
-                        <h3 class="text-uppercase">Cervezas</h3>
+                        <h3 class="text-uppercase"><a href="./Pages/Cervezas.html" class="text-white">Cerveza</a></h3>
                         <ul class="list-unstyled">
                             <li><a href="#!" class="text-white">Rubia</a></li>
                             <li><a href="#!" class="text-white">Negra</a></li>
@@ -466,13 +605,13 @@
 
                     <!--Grid column-->
                     <div class="footer-links-col col-lg-3 col-md-6">
-                        <h3 class="text-uppercase">Nosotros</h3>
+                        <h3 class="text-uppercase"><a href="./pages/nosotros.html" class="text-white">Nosotros</a></h3>
                         <ul class="list-unstyled">
-                            <li><a href="#!" class="text-white">Sobre nosotros</a></li>
-                            <li><a href="#!" class="text-white">Contacto</a>
+                            <li><a href="./pages/nosotros.html" class="text-white">Sobre nosotros</a></li>
+                            <li><a href="./pages/contacto.html" class="text-white">Contacto</a>
                             </li>
                             <li><a href="#!" class="text-white">FAQs</a></li>
-                            <li><a href="#!" class="text-white">Mensajes</a></li>
+                            <li><a href="./pages/contacto.html" class="text-white">Mensajes</a></li>
                         </ul>
                     </div>
                     <!--Grid column-->
@@ -496,7 +635,8 @@
         <!-- Grid container -->
 
         <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">© 2023 Copyright: <a class="text-white" href="./index.html">luby.com</a>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">© 2023 Copyright: <a class="text-white"
+                href="./index.html">luby.com</a>
         </div>
         <!-- Copyright -->
     </footer>

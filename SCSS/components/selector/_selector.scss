@@ -3,42 +3,106 @@
     /*contenedor filtro*/
     display: grid;
     grid-template: 
-        "txt-title txt-title txt-title" 1fr
-        "txt-subtitle1 txt-subtitle2 txt-subtitle3" 1fr;
-    margin: auto;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    padding: 10px;
+        "txt-title txt-title txt-title" auto
+        "txt-subtitle1 txt-subtitle2 txt-subtitle3" auto;
+
     color: $color-font;
-    h2 {
+    text-transform: uppercase;
+    border-top: solid 1px rgba(200, 200, 200, 0.438);
+    margin: 15px 0 0 0 ;
+        
+    h4 {
         font-weight: bold;
+        text-align: center;
     }
 
-    a{
+
+    a {
+        position: relative;
+        text-align: center;
+        margin: auto;
         font-size: $font-a-body;
         text-decoration: none;
         color: $color-font;
+        
+        &::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                border-radius: 2px;
+                background-color: $color-principal;
+                color: $color-principal;
+                font-weight: bolder;
+                bottom: 0;
+                left: 0;
+                transform-origin: right;
+                transform: scaleX(0);
+                transition: transform .3s ease-in-out;
+        }
+        
+        &:hover::before {
+            transform-origin: left;
+            transform: scaleX(1);
+            color: $color-principal;
+            font-weight: bolder;
+        }
+
         &:hover {
+            color: $color-principal;
             font-weight: bold;
-            font-size: $font-a-body*1.2;
         }
     }
-
-
     .txt-titulo {
         grid-area: txt-title;
+        justify-self: center;
         }
     
     .txt-subtitulo1{
         grid-area: txt-subtitle1 ;
+        justify-self: center;
+        transform: scale(1.15);
+        &:hover {
+            transform: scale(1.15);
+        }
     }
-    .txt-subtitulo1 {
-        grid-area: txt-subtitle1;
+    .txt-subtitulo2 {
+        grid-area: txt-subtitle2;
+        justify-self: center;
+        transform: scale(1.15);
+        &:hover {
+            transform: scale(1.15);
+        }
+
     }
-    .txt-subtitulo1 {
-        grid-area: txt-subtitle1;
+    .txt-subtitulo3 {
+        grid-area: txt-subtitle3;
+        justify-self: center;
+
+        &:hover{
+            transform: scale(1.15);        
+        }
     }
 }
 
 /*Fin ofertas destacadas*/
+
+/*inicio mas productos*/
+.separador-txt-productos {
+    margin: 5em 0 1em 0;
+    border-top: solid 1px rgba(200, 200, 200, 0.438);
+    h4 {
+        font-size: $font-h2-body;
+    }
+}
+
+.txt-productos{
+    a{
+        color: $color-principal !important;
+    }
+    h4{
+        font-size: $font-h4-body;
+    }
+}
+
+/*--Fin mas productos-->*/

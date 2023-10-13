@@ -3,8 +3,9 @@
 .principal-content{
     .grid-ofertas {
         display: flex;
-        flex-wrap: wrap;
+        flex-flow: wrap;
         justify-content: center;
+        align-content: center;
     }
 }
 /*------------- Fin contenedor grid---------------------*/

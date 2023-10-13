@@ -1,63 +1,10 @@
 /*------------- inicio card cerveza---------------------*/
 .item-card-cerveza {
-    /*card*/
-    margin: 15px 2%;
-    background-image: url(./../Img/Card-Fondo\ 2.png);
-    background-repeat:round;
-    background-size:contain;
-    width: 300px;
-    height: 200px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5%;
-
+    &:nth-child(odd) {
+            background-image: url(./../../../Img/Card-Fondo-cerveza\ 1.png);
+        }
     
-    &:hover {
-        box-shadow: 15px 15px 5px 0px rgba(0, 0, 0, 0.25);
-    }
-
-    h2 {
-        color: $color-font-header;
-        font-size: $font-h2-card;
-        margin: 0;
-        padding: 0;
-    }
-
-    h3 {
-        color: $color-font-header;
-        font-size: $font-h3-card;
-    }
-
-    p {
-        color: $color-font-header;
-        font-size: $font-p-card;
-        margin: 0;
-        padding: 0;
-    }
-    /*contenido dentro de la card botella + texto*/
-    .contenido-card {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        /*text*/
-        .contenido-txt-card {
-            height: fit-content;
-            width: 200px;
-            text-align: center;
-            background-color: $color-shadow-black;
-            border-radius: 5%;
-            margin: 10px;
-            padding: 5px;
-        }
-
-        /*imagen derecha*/
-        .contenido-img-card {
-            img {
-                width: 60px;
-                height: auto;
-            }
-        }
-    }
-}
+        &:nth-child(even) {
+            background-image: url(./../../../Img/Card-Fondo-cerveza\ 2.png);
+        }}
 /*------------- Fin card cerveza---------------------*/

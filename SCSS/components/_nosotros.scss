@@ -1,0 +1,54 @@
+.container-nosotros{
+    width: 90vw;
+    margin: 10px auto;
+    
+    h5{
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+.cards-nosotros{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-content: center;
+    .card-historia{
+        min-width: 300px;
+    }
+    .card-data{
+        width: fit-content;
+        min-width: 300px;
+        i {
+                color: $color-principal;
+                font-size: 1.25em;
+            }
+        .card-icons-social {
+            a {
+                font-size: 1.25em;
+                margin: 5px 25px;
+    
+                i {
+                    transition: transform .2s;
+    
+                    /* Animation */
+                    &:hover {
+                        transform: scale(1.5);
+                    }
+                }
+            }
+    
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .card-mapa{
+        width: 300px;
+        iframe{
+            width: 100%;
+        }
+        
+    }
+}

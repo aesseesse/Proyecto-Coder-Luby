@@ -1,6 +1,14 @@
 /*Font size*/
+  @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
 body {
+    font-family: 'mulish', sans-serif;
     font-size: 16px;
+
+    box-sizing: border-box;
+    
+    a {
+            text-decoration: none;
+        }
 }
 
 $font-h2-header: 150%;
@@ -40,7 +48,7 @@ body {
 
 @media (max-width:425px) {
     body {
-        font-size: 12px;
+        font-size: 10px;
     }
 }
 

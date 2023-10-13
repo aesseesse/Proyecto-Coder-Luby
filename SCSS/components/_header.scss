@@ -5,10 +5,11 @@
     background-color: $color-background-nav !important;
     .container-fluid{
         display: grid;
-        width: 100vw;
+        width: 100%;
+        margin: 0 10px;
         grid-template:
-            "hlogo hsearch hmenu" 1fr
-            "hlogo hsearch hmenu" 1fr;
+            "hlogo hsearch hmenu" auto
+            "hlogo hsearch hmenu" auto;
         
         /*logo*/
         .header-logo {
@@ -23,12 +24,13 @@
         /*search*/
         .header-search {
             grid-area: hsearch;
-            font-weight: lighter;
-            margin: auto;
+            margin: 0 auto;
     
             .form-control {
                 font-size: $font-p-header !important;
-                width: 35vw;
+                font-weight: lighter;
+                line-height: 0;
+                width: auto;
                 margin: auto;
             }
     
@@ -43,47 +45,33 @@
         /*Menu*/
         .header-navbar {
             grid-area: hmenu;
-            justify-self: right;    
+            justify-self: center;
             .navbar-toggler {
                 border: none;
-                color: $color-font-header !important;   
+                color: $color-font-header;
             }
-    
+
             a {
                 /*lista navbar*/
                 font-size: $font-a-header !important;
-                color: $color-font-header;
-                text-decoration: none;
                 margin: 0 auto;
+                color: $color-font-header;
             }
         }
-    
     }
 }
+
 
 @media (max-width:426px) {
     .header {
         .container-fluid {
-            display: grid;
             grid-template:
-                "hlogo hlogo hmenu" 1fr "hsearch hsearch hsearch" 1fr;
-
-            .header-logo {
-                img {
-                    height: 2rem;
-                }
-            }
-
-            .header-search {
-                margin: 5px;
-                .form-control {
-                    width: 50vw;
-                }
-            }
-
+            "hlogo hmenu" auto
+            "hsearch hsearch" auto;
         }
     }
 }
+
 
 
 /*------------- fin header---------------------*/
